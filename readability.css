@@ -82,7 +82,9 @@ main .night-ambassador-interest small,main .night-portrait>span{font-size:11px}
 .page-wayfinder>span{text-transform:none;letter-spacing:0;font-size:13px;color:#555}
 .page-wayfinder{background:#f0f0ed;border:0;gap:9px;padding:12px 6%;min-height:62px;box-shadow:0 2px 7px #00000006}
 .page-wayfinder button{border:0!important;border-radius:25px;padding:9px 17px;font-size:14px;line-height:1.5;color:#555;min-height:38px}
+.page-wayfinder>a{border-radius:25px;padding:9px 17px;font-size:14px;line-height:1.5;color:#555;min-height:38px;white-space:nowrap}
 .page-wayfinder button:hover{background:#e1e1dc;color:#111}
+.page-wayfinder>a:hover{background:#e1e1dc;color:#111}
 .page-wayfinder button.current{background:#111;color:#fff}
 @media(max-width:1100px){.page-wayfinder{padding:10px 6%;min-height:57px;gap:5px}.page-wayfinder button{font-size:13px;padding:8px 14px;min-height:36px}}
 .night-directions{display:inline-block;font-size:13px;line-height:1.7;text-decoration:underline;text-underline-offset:4px;margin-top:10px}

@@ -32,15 +32,17 @@
  header.after(pageNav);
  const pages={
   about:[['Community','.community-story'],['By the numbers','.community-reach'],['Why S.Suite','.community-suite-story'],['Programs','#salute']],
-  evening:[['Our approach','.night-approach'],['Agenda','.night-flow'],['Ambassadors','.night-ambassadors'],['The conversation','#recognition-conversation'],['Attend','.night-attend']],
+  evening:[['Our approach','.night-approach'],['Agenda','.night-flow'],['Ambassadors','https://event.ssuite.org/ambassadors'],['The conversation','#recognition-conversation'],['Attend','.night-attend']],
   sponsors:[['Our partners','.partner-wall'],['Partnerships','.sponsor-paths'],['Host a table','.sponsor-host']],
-  ambassadors:[['The opportunity','.ambassador-opportunity'],['Express interest','.ambassador-signup']]
  };
  function updateWayfinder(){
   setOpen(false);pageNav.replaceChildren();
   const sections=pages[location.hash.slice(1)]||[];pageNav.hidden=!sections.length;
   if(!sections.length)return;
   sections.forEach(([text,selector])=>{
+   if(selector.startsWith('https://')){
+    const link=document.createElement('a');link.href=selector;link.target='_blank';link.rel='noopener noreferrer';link.textContent=text+' ↗';pageNav.append(link);return;
+   }
    const target=document.querySelector(selector);if(!target)return;
    const button=document.createElement('button');button.type='button';button.textContent=text;
    if(!pageNav.querySelector('button'))button.classList.add('current');
