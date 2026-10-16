@@ -1,0 +1,63 @@
+/* Scoped Evening page: one opening, real people, a readable program, clear attendance. */
+.night-page{background:#f7f5ef;color:#181713}
+.night-opening{display:grid;grid-template-columns:1.05fr 1fr;background:#101110;color:#f7f5ef;padding:78px 5% 0;gap:55px 4%;overflow:hidden}
+.night-opening-copy{padding:10px 0 18px;align-self:center;position:relative;z-index:1}
+.night-opening-copy .eyebrow{font-size:9px;color:#b8b6ac;letter-spacing:2px;margin-bottom:36px}
+.night-opening h2{font-size:clamp(78px,9.1vw,138px);line-height:.96;letter-spacing:-3px;margin:0 0 32px;white-space:nowrap}
+.night-lede{max-width:360px;color:#c5c5bb;font-size:14px;line-height:1.85;margin-bottom:28px}
+.night-actions{display:flex;align-items:center;gap:32px}
+.night-actions .btn{background:#f7f5ef;color:#181713;border-color:#f7f5ef;min-width:145px}
+.night-text-link{font-size:11px;padding:12px 0;border-bottom:1px solid #74746b;display:inline-flex;gap:22px}
+.night-scene{position:relative;min-width:0;margin:0;align-self:stretch;min-height:470px;background:#252622;overflow:hidden}
+.night-scene img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:76% center}
+.night-scene figcaption{position:absolute;bottom:20px;left:24px;font-size:8px;letter-spacing:1.7px;color:#deddd2}
+.night-facts{grid-column:1/-1;display:grid;grid-template-columns:1.3fr .6fr 1.2fr 1.2fr;gap:25px;border-top:1px solid #45463e;padding:28px 0 30px}
+.night-facts span{display:block;font-size:8px;letter-spacing:1.8px;color:#9d9f91;margin-bottom:9px}
+.night-facts p{font-size:11px;line-height:1.6;margin:0;color:#ebe9df}
+.night-conversation,.night-flow{padding:85px 6%;max-width:1600px;margin:auto}
+.night-section-heading{display:flex;justify-content:space-between;gap:65px;align-items:end;margin-bottom:40px}
+.night-section-heading h3{font-size:clamp(52px,5.6vw,82px);line-height:1;letter-spacing:-1.5px;margin-bottom:0}
+.night-section-heading .eyebrow{font-size:8px;letter-spacing:1.7px;margin-bottom:22px;color:#756e61}
+.night-section-heading>p{max-width:340px;font-size:13px;color:#756e61;line-height:1.8;margin:0}
+.night-speakers{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.night-portrait{height:clamp(340px,37vw,540px);position:relative;background:#262a26;overflow:hidden}
+.night-portrait img{width:100%;height:100%;object-fit:cover;object-position:center 23%;display:block}
+.night-portrait:after{content:'';position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.65));pointer-events:none}
+.night-portrait>span{position:absolute;left:27px;right:22px;bottom:24px;z-index:1;font-size:8px;letter-spacing:1.5px;color:#fff;line-height:1.6}
+.night-speaker:nth-child(2) .night-portrait{background:#ddd7cc}
+.night-speaker:nth-child(2) .night-portrait img{object-position:center 18%}
+.night-speaker-caption{padding:24px 0 0;display:flex;justify-content:space-between;gap:20px;align-items:start}
+.night-speaker h4{font-family:Aperitif,Georgia,serif;font-weight:400;font-size:clamp(30px,3.3vw,49px);line-height:1.1;margin:0;letter-spacing:-.6px}
+.night-speaker-caption p{font-size:10px;line-height:1.8;color:#756e61;margin:3px 0 0;max-width:190px}
+.night-flow{padding-top:25px;padding-bottom:85px}
+.night-flow .night-section-heading{border-top:1px solid #cfc7b8;padding-top:65px}
+.night-chapters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:45px;margin-top:45px}
+.night-chapters article{border-top:1px solid #cfc7b8;padding-top:25px}
+.night-number{font-family:Aperitif,Georgia,serif;font-size:63px;line-height:1;color:#ad9b7b;display:block;margin-bottom:35px}
+.night-chapters .eyebrow{font-size:8px;letter-spacing:1.3px;color:#756e61;margin-bottom:15px}
+.night-chapters h4{font-family:Aperitif,Georgia,serif;font-size:31px;line-height:1.15;font-weight:400;letter-spacing:-.4px;margin:0 0 16px}
+.night-chapters p:not(.eyebrow){font-size:12px;line-height:1.9;color:#756e61;margin-bottom:0;max-width:320px}
+.night-attend{display:grid;grid-template-columns:1fr 1fr;gap:10%;background:#e9e2d5;padding:70px 6% 75px}
+.night-attend h3{font-size:clamp(58px,6.5vw,90px);letter-spacing:-1.8px;line-height:.98;margin:0 0 25px}
+.night-attend-heading>p:not(.eyebrow){font-size:12px;line-height:1.8;color:#6d665b;max-width:320px;margin:0}
+.night-attend-options article{border-top:1px solid #bcb19e;padding:25px 0}
+.night-attend-options article>span{font-size:8px;letter-spacing:1.5px;color:#756e61}
+.night-attend-options h4{font-family:Aperitif,Georgia,serif;font-size:34px;font-weight:400;line-height:1.1;margin:16px 0 12px}
+.night-attend-options p{font-size:12px;color:#6d665b;margin:0 0 20px}
+.night-attend-options a{display:flex;justify-content:space-between;align-items:center;font-size:11px;padding:9px 0;border-bottom:1px solid #bcb19e;width:100%}
+.night-attend-options a:hover{border-bottom-color:#181713}
+@media(min-width:1700px){.night-opening{padding-left:max(6%,calc((100vw - 1400px)/2));padding-right:max(6%,calc((100vw - 1400px)/2))}}
+@media(max-width:1000px){.night-opening{gap:40px 4%;padding-top:55px}.night-opening h2{font-size:9.2vw;letter-spacing:-2px}.night-scene{min-height:420px}.night-speaker-caption{display:block}.night-speaker-caption p{max-width:none;margin-top:12px}.night-chapters{gap:25px}.night-chapters h4{font-size:28px}.night-facts{grid-template-columns:1.2fr .5fr 1.1fr 1fr;gap:16px}}
+@media(max-width:760px){
+ .night-opening{grid-template-columns:1fr;padding:45px 6% 0;gap:30px}
+ .night-opening-copy{padding:0}.night-opening-copy .eyebrow{font-size:7px;margin-bottom:25px;letter-spacing:1.5px}
+ .night-opening h2{font-size:clamp(67px,15vw,108px);letter-spacing:-2px;margin-bottom:24px;white-space:normal}
+ .night-lede{font-size:13px;margin-bottom:24px;max-width:360px}.night-actions{gap:28px}.night-actions .btn{min-width:130px}
+ .night-scene{min-height:0;aspect-ratio:1.5}.night-scene img{object-position:72% center}.night-scene figcaption{font-size:6px;left:18px;bottom:17px}
+ .night-facts{grid-template-columns:1.4fr 1fr;gap:22px 20px;padding:25px 0 30px}.night-facts span{font-size:7px}.night-facts p{font-size:10px}
+ .night-conversation,.night-flow{padding:50px 6%}.night-section-heading{display:block;margin-bottom:28px}.night-section-heading h3{font-size:51px;letter-spacing:-1px}.night-section-heading .eyebrow{font-size:7px;margin-bottom:18px}.night-section-heading>p{font-size:12px;margin-top:22px;max-width:410px}
+ .night-speakers{gap:32px;grid-template-columns:1fr}.night-portrait{height:auto;aspect-ratio:1.1}.night-portrait img{object-position:center 24%}.night-portrait>span{font-size:7px;left:20px;bottom:18px;letter-spacing:1px}.night-speaker-caption{padding-top:19px;display:flex;gap:20px}.night-speaker h4{font-size:35px;max-width:170px}.night-speaker-caption p{font-size:9px;max-width:155px;margin:0}
+ .night-flow{padding-top:0}.night-flow .night-section-heading{padding-top:43px}.night-chapters{grid-template-columns:1fr;gap:30px;margin-top:30px}.night-chapters article{display:grid;grid-template-columns:53px 1fr;gap:0 16px;padding-top:23px}.night-number{grid-column:1;grid-row:1/4;font-size:45px;margin:0}.night-chapters .eyebrow{grid-column:2;font-size:7px;margin-bottom:12px}.night-chapters h4{grid-column:2;font-size:30px;margin-bottom:13px}.night-chapters p:not(.eyebrow){grid-column:2;max-width:none;font-size:12px}
+ .night-attend{grid-template-columns:1fr;gap:38px;padding:48px 6%}.night-attend h3{font-size:62px;letter-spacing:-1px}.night-attend-options h4{font-size:31px}
+}
+@media(max-width:370px){.night-speaker-caption{display:block}.night-speaker h4{max-width:none}.night-speaker-caption p{margin-top:10px;max-width:none}.night-opening h2{font-size:64px}}

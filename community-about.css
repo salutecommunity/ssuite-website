@@ -1,0 +1,57 @@
+/* People-led editorial design; photography here is SALUTE community, not category art. */
+.community-about,.community-programs{background:#fff;color:#111}
+.community-opening{padding:50px 6% 42px;max-width:1600px;margin:auto}
+.community-folio{display:flex;justify-content:space-between;gap:25px;border-top:1px solid #111;padding-top:15px;margin-bottom:45px;font-size:8px;letter-spacing:1.5px;line-height:1.7}
+.community-opening-type{display:grid;grid-template-columns:1.5fr .65fr;gap:8%;align-items:end}
+.community-opening h2{font-size:clamp(68px,8.6vw,130px);letter-spacing:-2.8px;line-height:.96;margin:0}
+.community-opening-type>p{font-size:13px;color:#555;line-height:1.9;margin:0 0 7px;max-width:310px}
+.community-about figure,.community-programs figure{margin:0;min-width:0}
+.community-about figure img,.community-programs figure img{width:100%;display:block;object-fit:cover}
+.community-about figcaption,.community-programs figcaption{font-size:8px;letter-spacing:.6px;line-height:1.8;color:#666;margin-top:12px}
+.community-cover-slot{padding:0 3%;max-width:1800px;margin:auto}
+.community-cover>img{height:clamp(360px,45vw,680px);object-position:center 85%}
+.community-cover>figcaption{padding:0 3.2%}
+.community-story{max-width:1600px;margin:auto;padding:85px 6% 65px;display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:center}
+.community-editorial-photo>img{height:clamp(400px,43vw,640px);object-position:center}
+.community-story-copy .eyebrow{font-size:8px;color:#555;letter-spacing:1.4px;line-height:1.8;margin-bottom:28px}
+.community-story h3,.community-programs h3{font-size:clamp(50px,5.5vw,82px);letter-spacing:-1.5px;line-height:1.02;margin-bottom:30px}
+.community-story-copy>p:not(.eyebrow){font-size:13px;line-height:1.95;color:#555;max-width:465px}
+.community-story-copy .textlink{font-size:9px;letter-spacing:.8px;margin-top:10px;line-height:1.8}
+.community-photo-pair{max-width:1600px;margin:auto;padding:0 6% 75px;display:grid;grid-template-columns:1.3fr 1fr;gap:45px;align-items:end}
+.community-pair-large>img{height:clamp(300px,32vw,465px)}
+.community-pair-small>img{height:clamp(260px,25vw,365px)}
+.community-suite-story{display:grid;grid-template-columns:1.2fr 1fr;gap:10%;background:#000;color:#fff;padding:75px 6% 80px}
+.community-suite-title .eyebrow{font-size:8px;letter-spacing:1.5px;color:#bbb;margin-bottom:30px}
+.community-suite-title h3{font-size:clamp(50px,5.5vw,82px);line-height:1.02;letter-spacing:-1.5px;margin-bottom:30px}
+.community-suite-title>p:not(.eyebrow){font-size:13px;line-height:1.95;color:#bbb;max-width:425px}
+.community-suite-purpose article{border-top:1px solid #666;padding:23px 0 27px}
+.community-suite-purpose article>span{font-size:8px;letter-spacing:1.3px;color:#bbb}
+.community-suite-purpose h4{font-family:Aperitif,Georgia,serif;font-size:31px;line-height:1.12;font-weight:400;margin:19px 0 15px}
+.community-suite-purpose p{font-size:12px;line-height:1.9;color:#bbb;margin-bottom:0;max-width:460px}
+.community-suite-links{display:flex;flex-wrap:wrap;gap:18px 30px;margin-top:5px}
+.community-suite-links a{font-size:9px;line-height:1.9;letter-spacing:.7px;text-transform:uppercase;border-bottom:1px solid #aaa;padding-bottom:5px}
+.community-programs{padding:75px 6% 85px;max-width:1600px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:start}
+.community-salute-logo{width:120px;height:auto;display:block;margin-bottom:35px}
+.community-programs .eyebrow{font-size:8px;letter-spacing:1.5px;color:#555}
+.community-programs-intro>p:not(.eyebrow){font-size:13px;line-height:1.9;color:#555;max-width:400px;margin-bottom:28px}
+.community-program-image>img{height:270px}
+.community-program-list{padding-top:10px}
+.community-program-list article{display:grid;grid-template-columns:28px 1fr;gap:17px;padding:24px 0;border-top:1px solid #ccc}
+.community-program-list article>span{font-size:8px;color:#666;padding-top:7px}
+.community-program-list h4{font-family:Aperitif,Georgia,serif;font-size:30px;line-height:1.15;font-weight:400;letter-spacing:-.4px;margin:0 0 12px}
+.community-program-list p{font-size:12px;line-height:1.9;color:#555;margin-bottom:0}
+.community-foundation{border-top:1px solid #111;margin-top:10px;padding-top:24px}
+.community-foundation strong{font-size:10px;font-weight:600}
+.community-foundation p{font-size:10px;line-height:1.9;margin:12px 0 25px}
+.community-program-list>.textlink{font-size:9px;line-height:1.8;letter-spacing:.7px}
+@media(max-width:1000px){.community-opening-type{grid-template-columns:1.3fr .8fr;gap:6%}.community-opening h2{font-size:8.5vw}.community-story,.community-programs{gap:7%}.community-story h3{font-size:5.8vw}.community-suite-story{gap:7%}.community-suite-title h3{font-size:5.5vw}.community-photo-pair{gap:28px}}
+@media(max-width:760px){
+ .community-opening{padding:32px 6% 30px}.community-folio{font-size:6px;letter-spacing:.9px;margin-bottom:30px;gap:20px}.community-folio span:last-child{max-width:120px;text-align:right}
+ .community-opening-type{display:block}.community-opening h2{font-size:clamp(54px,12.5vw,85px);line-height:1;letter-spacing:-1.5px;margin-bottom:28px}.community-opening-type>p{font-size:12px;max-width:400px;margin:0}
+ .community-cover-slot{padding:0}.community-cover>img{height:auto;aspect-ratio:1.5;object-position:center}.community-cover>figcaption{padding:0 6%;font-size:7px;margin-top:10px}
+ .community-story{padding:45px 6% 35px;grid-template-columns:1fr;gap:30px}.community-editorial-photo>img{height:auto;aspect-ratio:1.1}.community-story h3{font-size:51px}.community-story-copy .eyebrow{font-size:7px;margin-bottom:23px}.community-story-copy>p:not(.eyebrow){font-size:12px;max-width:none}
+ .community-photo-pair{padding:0 6% 40px;gap:18px;grid-template-columns:1fr 1fr;align-items:start}.community-pair-large>img{height:220px}.community-pair-small>img{height:170px;margin-top:50px}.community-photo-pair figcaption{font-size:7px;letter-spacing:0}
+ .community-suite-story{grid-template-columns:1fr;gap:25px;padding:45px 6% 50px}.community-suite-title h3{font-size:51px}.community-suite-title>p:not(.eyebrow){font-size:12px;max-width:none}.community-suite-purpose h4{font-size:29px}.community-suite-title .eyebrow{font-size:7px;margin-bottom:25px}
+ .community-programs{grid-template-columns:1fr;gap:30px;padding:45px 6% 55px}.community-programs h3{font-size:55px}.community-programs-intro>p:not(.eyebrow){font-size:12px;max-width:none}.community-salute-logo{width:110px;margin-bottom:28px}.community-program-image>img{height:240px}.community-program-list h4{font-size:28px}
+}
+.community-programs .community-program-image>img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;display:block}

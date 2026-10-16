@@ -1,0 +1,31 @@
+.community-reach{padding:75px 6% 80px;background:#fff;color:#111}
+.reach-heading{display:grid;grid-template-columns:1.5fr 1fr;gap:22px 10%;align-items:end;margin-bottom:50px}
+.reach-heading>.eyebrow{grid-column:1/-1;font-size:8px;letter-spacing:1.5px;margin:0}
+.reach-heading h3{font-family:Aperitif,Georgia,serif;font-weight:400;font-size:clamp(48px,5.6vw,84px);line-height:1.03;letter-spacing:-1.6px;margin:0}
+.reach-heading>p:last-child{font-size:13px;line-height:1.9;max-width:360px;margin:0 0 5px;color:#555}
+.reach-totals{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #111;border-bottom:1px solid #ccc}
+.reach-totals>div{padding:30px 18px 26px 0;border-right:1px solid #ddd}
+.reach-totals>div+div{padding-left:28px}.reach-totals>div:last-child{border:0}
+.reach-totals strong{font-family:Aperitif,Georgia,serif;font-size:clamp(42px,5.3vw,76px);font-weight:400;line-height:1}
+.reach-totals strong span{font-size:.5em}.reach-totals p{font-size:10px;color:#555;line-height:1.6;margin:13px 0 0}
+.reach-source{font-size:9px;line-height:1.8;color:#666;margin:13px 0 65px}
+.reach-atlas,.reach-profile{display:grid;grid-template-columns:.8fr 1.65fr;gap:7%;align-items:start}
+.reach-kicker{font-size:8px;letter-spacing:1.2px;line-height:1.8}
+.reach-atlas h4,.reach-profile h4{font-family:Aperitif,Georgia,serif;font-size:clamp(35px,3.5vw,53px);line-height:1.06;font-weight:400;letter-spacing:-.7px;margin:25px 0}
+.reach-map-intro>p,.reach-profile-intro>p{font-size:12px;line-height:1.9;color:#555;max-width:300px}
+.reach-demo-note{border-top:1px solid #ccc;padding-top:20px;margin-top:35px;max-width:280px}.reach-demo-note strong{font-size:8px;letter-spacing:1px}.reach-demo-note p{font-size:10px;line-height:1.85;color:#666;margin-bottom:0}
+.reach-map-panel{padding-top:22px}.reach-map{position:relative}.reach-map>img{display:block;width:100%;height:auto}
+.reach-pin-layer{position:absolute;inset:0}.reach-pin{position:absolute;transform:translate(-50%,-50%);width:32px;height:32px;border:0;padding:6px;background:transparent;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.reach-pin-dot{width:9px;height:9px;background:#111;border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 1px #111;transition:transform .2s}.reach-pin:hover .reach-pin-dot,.reach-pin.selected .reach-pin-dot{transform:scale(1.5)}.reach-pin:focus-visible{outline:2px solid #111;outline-offset:2px}
+.reach-map-detail{border-top:1px solid #111;padding:18px 0;min-height:85px}.reach-map-detail>span{font-size:9px;letter-spacing:1px;text-transform:uppercase}.reach-map-detail>p{font-size:11px;line-height:1.8;color:#555;margin:10px 0 0;max-width:540px}.reach-map-foot{font-size:8px;line-height:1.8;color:#777;margin:0}
+.reach-profile{margin-top:65px;border-top:1px solid #ccc;padding-top:50px}.reach-tabs{display:flex;gap:25px;border-bottom:1px solid #ccc}.reach-tabs>button{font:inherit;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:0 0 16px;font-size:10px;letter-spacing:.5px;cursor:pointer;color:#666}.reach-tabs>button[aria-selected=true]{border-color:#111;color:#111}.reach-tabs>button:focus-visible{outline:1px solid #111;outline-offset:5px}
+.reach-profile-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #e3e3e3;padding:17px 0;font-size:12px;line-height:1.5}.reach-profile-row>span:last-child{color:#777}.reach-profile-note{font-size:8px;line-height:1.9;color:#666;letter-spacing:.3px;margin:18px 0 0;max-width:570px}
+.community-program-list .mentor-status{font-size:7px;letter-spacing:1px;margin:0 0 10px;color:#666}
+@media(max-width:700px){.community-reach{padding:45px 6%}.reach-heading{grid-template-columns:1fr;margin-bottom:30px}.reach-heading h3{font-size:50px}.reach-heading>p:last-child{font-size:12px;max-width:none}.reach-totals{grid-template-columns:1fr 1fr}.reach-totals>div:nth-child(2){border:0}.reach-totals>div:nth-child(3){padding-left:0;border-top:1px solid #ddd}.reach-totals>div:nth-child(4){border-top:1px solid #ddd}.reach-totals strong{font-size:49px}.reach-totals>div{padding-top:22px;padding-bottom:22px}.reach-source{margin-bottom:40px}.reach-atlas,.reach-profile{grid-template-columns:1fr;gap:25px}.reach-atlas h4,.reach-profile h4{font-size:43px;margin:18px 0}.reach-map-intro>p,.reach-profile-intro>p{max-width:none}.reach-demo-note{max-width:none;margin-top:20px;padding-top:15px}.reach-map-panel{padding-top:0}.reach-profile{margin-top:35px;padding-top:35px}.reach-tabs{gap:20px}.reach-tabs>button{font-size:9px}.reach-profile-row{font-size:11px}}
+.community-company-wall{background:#fff;color:#111;border-top:1px solid #ccc;padding:65px 6% 80px;display:grid;grid-template-columns:1fr 1.25fr;gap:9%;align-items:center}
+.company-wall-copy h3{font-family:Aperitif,Georgia,serif;font-size:clamp(40px,4.6vw,68px);line-height:1.05;font-weight:400;letter-spacing:-1px;margin:26px 0}
+.company-wall-copy>p{font-size:12px;line-height:1.9;color:#555;max-width:370px}.company-wall-copy>.eyebrow{font-size:8px;letter-spacing:1.3px}.company-wall-copy>.company-wall-provenance{font-size:9px;line-height:1.8;border-top:1px solid #ddd;padding-top:18px;margin-top:30px}
+.community-company-wall figure{margin:0;background:#fff}.community-company-wall img{display:block;width:100%;height:auto}.community-company-wall figcaption{font-size:7px;letter-spacing:1px;color:#666;margin-top:24px;text-align:center}
+@media(max-width:700px){.community-company-wall{grid-template-columns:1fr;padding:40px 6%;gap:30px}.company-wall-copy h3{font-size:47px}.company-wall-copy>p{max-width:none}}
+.reach-totals.audited-totals{grid-template-columns:1fr 2fr;align-items:center}.audited-roster-explanation h4{font-family:Aperitif,Georgia,serif;font-size:30px;font-weight:400;margin:0}.audited-roster-explanation p{max-width:460px;font-size:11px;line-height:1.9}.audited-unavailable{padding:25px 0;font-size:13px;line-height:1.9;color:#555}
+@media(max-width:700px){.reach-totals.audited-totals{grid-template-columns:1fr}.reach-totals.audited-totals>div{border-right:0;padding-left:0}.audited-roster-explanation h4{font-size:27px}}

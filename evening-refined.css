@@ -1,0 +1,80 @@
+/* A calmer magazine rhythm: composition and space replace stacked rules. */
+.night-experience .night-opening{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:65px;padding:90px 6% 80px;align-items:center;max-width:1600px;margin:auto}
+.night-experience .night-opening-copy{display:block}
+.night-experience .night-opening-copy .eyebrow{border:0;padding:0;margin-bottom:30px}
+.night-experience .night-opening h2{border:0;padding:0;margin:0 0 32px;font-size:clamp(68px,7.5vw,112px);line-height:1.03;letter-spacing:-2.5px}
+.night-experience .night-lede{max-width:540px;margin:0;font-size:15px}
+.night-experience .night-actions{justify-content:flex-start;margin-top:32px;gap:28px}
+.night-experience .night-facts{grid-column:auto;grid-template-columns:1fr;gap:24px;background:#f3f3f1;border:0;margin:0;padding:34px 30px;align-self:center}
+.night-experience .night-facts span{font-size:8px;letter-spacing:1.4px;margin-bottom:7px;color:#666}
+.night-experience .night-facts p{font-size:13px;line-height:1.65}
+.night-experience .night-approach{border:0;background:#f4f4f2;padding:70px 6%;gap:8%;align-items:start}
+.night-experience .night-approach h3{font-size:clamp(42px,4.6vw,66px);line-height:1.06}
+.night-experience .night-flow{padding:90px 6%}
+.night-experience .night-flow .night-section-heading{border:0;padding:0;margin-bottom:48px;align-items:end}
+.night-experience .night-flow .night-section-heading>p{padding:0;font-size:14px;line-height:1.8}
+.night-experience .night-agenda{display:grid;gap:24px;margin:0}
+.night-experience .night-agenda>article{position:relative;display:grid;grid-template-columns:80px minmax(0,1fr);gap:30px;border:0!important;background:#f4f4f2;padding:44px 40px}
+.night-experience .night-agenda>article:nth-child(2){background:#eaeae7}
+.night-experience .night-agenda .night-number{font-size:70px;line-height:1;color:#8a8a81;margin:0;grid-column:auto;grid-row:auto}
+.night-experience .night-step-content{grid-template-columns:1fr 1.2fr;gap:22px 48px}
+.night-experience .night-step-title{grid-column:1;grid-row:1/3;align-self:start}
+.night-experience .night-agenda h4{font-size:clamp(30px,3vw,43px);line-height:1.12;max-width:310px}
+.night-experience .night-agenda .eyebrow{font-size:8px;letter-spacing:1.3px;margin-bottom:18px}
+.night-experience .night-step-content>div:not(.night-step-title){grid-column:2}
+.night-experience .night-small-label{font-size:8px;letter-spacing:1px;margin-bottom:6px;color:#666}
+.night-experience .night-agenda p:not(.eyebrow){font-size:14px;line-height:1.8;color:#444}
+.night-experience .night-ambassadors{background:#fff;color:#111;gap:9%;padding:25px 6% 85px;max-width:1600px;margin:auto}
+.night-experience .night-ambassadors h3{font-size:clamp(58px,6.6vw,95px);line-height:1.02}
+.night-experience .night-ambassador-intro .eyebrow,.night-experience .night-ambassador-intro>p:not(.eyebrow){color:#555}
+.night-experience .night-ambassador-detail{background:#f4f4f2;padding:35px 36px}
+.night-experience .night-ambassador-detail article{border:0;padding:0;margin-bottom:30px}
+.night-experience .night-ambassadors h4{font-size:32px}
+.night-experience .night-ambassadors .night-small-label,.night-experience .night-ambassador-detail p,.night-experience .night-ambassador-interest small{color:#555}
+.night-experience .night-ambassador-interest{padding-top:0}
+.night-experience .night-ambassador-interest .textlink{color:#111}
+.night-experience .night-conversation{background:#f4f4f2;padding-top:80px;padding-bottom:80px;max-width:none}
+.night-experience .night-conversation>.night-section-heading,.night-experience .night-speakers{max-width:1408px;margin-left:auto;margin-right:auto}
+.night-experience .night-conversation .night-section-heading{align-items:end;margin-bottom:40px}
+.night-experience .night-conversation .night-section-heading h3{font-size:clamp(52px,6vw,86px)}
+.night-experience .night-section-heading>p{font-size:14px}
+.night-experience .night-portrait{height:clamp(370px,36vw,540px)}
+.night-experience .night-speaker-caption{border:0;padding:24px 0 0}
+.night-experience .night-attend-options article{border:0;padding-top:0;padding-bottom:30px}
+.night-experience .night-attend-options article:last-child{padding-bottom:0}
+.night-experience .night-attend-options a{border:0;width:max-content;gap:35px;text-decoration:underline;text-underline-offset:7px}
+@media(max-width:1000px){
+ .night-experience .night-opening{grid-template-columns:minmax(0,1fr) 245px;gap:35px}
+ .night-experience .night-opening h2{font-size:8vw}
+ .night-experience .night-facts{padding:28px 24px}
+ .night-experience .night-agenda>article{grid-template-columns:58px minmax(0,1fr);gap:22px;padding:35px 28px}
+ .night-experience .night-agenda .night-number{font-size:53px}
+ .night-experience .night-step-content{gap:22px 28px}
+}
+@media(max-width:760px){
+ .night-experience .night-opening{grid-template-columns:1fr;padding:45px 6% 48px;gap:32px}
+ .night-experience .night-opening h2{font-size:clamp(51px,11.8vw,82px);letter-spacing:-1.5px}
+ .night-experience .night-lede{font-size:14px}
+ .night-experience .night-opening-copy .eyebrow{font-size:8px;margin-bottom:25px}
+ .night-experience .night-facts{grid-template-columns:1fr 1fr;gap:24px 18px;padding:25px 22px}
+ .night-experience .night-facts p{font-size:12px}
+ .night-experience .night-approach{padding:45px 6%;gap:25px}
+ .night-experience .night-approach h3{font-size:43px}
+ .night-experience .night-flow{padding:50px 6%}
+ .night-experience .night-flow .night-section-heading{margin-bottom:30px}
+ .night-experience .night-flow .night-section-heading h3{font-size:43px}
+ .night-experience .night-agenda{gap:18px}
+ .night-experience .night-agenda>article{grid-template-columns:1fr;gap:20px;padding:28px 24px}
+ .night-experience .night-agenda .night-number{font-size:48px}
+ .night-experience .night-step-content{display:grid;grid-template-columns:1fr;gap:23px}
+ .night-experience .night-step-title{grid-column:auto;grid-row:auto}
+ .night-experience .night-step-content>div:not(.night-step-title){grid-column:auto}
+ .night-experience .night-agenda h4{font-size:34px;max-width:none}
+ .night-experience .night-agenda .eyebrow{font-size:8px;margin-bottom:12px}
+ .night-experience .night-ambassadors{padding:12px 6% 50px;gap:28px}
+ .night-experience .night-ambassadors h3{font-size:58px}
+ .night-experience .night-ambassador-detail{padding:28px 24px}
+ .night-experience .night-conversation{padding-top:50px;padding-bottom:50px}
+ .night-experience .night-conversation .night-section-heading h3{font-size:49px}
+ .night-experience .night-portrait{height:auto;aspect-ratio:1.05}
+}

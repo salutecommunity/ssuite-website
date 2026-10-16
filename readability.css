@@ -1,0 +1,178 @@
+/* Readable body copy throughout; keep oversized display type distinct. */
+@media(max-width:1100px){
+ .masthead.menu-open .attendance-nav{padding-top:26px}
+ .masthead.menu-open .nav .attendance-nav summary{font-family:Aperitif,Georgia,serif;font-size:29px;line-height:1.25;padding:21px 22px;min-height:78px;align-items:center;letter-spacing:0}
+ .masthead.menu-open .attendance-menu{padding:12px 0 0;display:grid;gap:12px;background:#fff}
+ .masthead.menu-open .attendance-nav:not([open]) .attendance-menu{display:none}
+ .masthead.menu-open .attendance-menu a{display:flex;flex-direction:column;gap:7px;background:#f3f3f0;border:1px solid #deded8;padding:23px 22px;min-height:105px;text-align:left}
+ .masthead.menu-open .attendance-menu a:hover{background:#e9e9e3}
+ .masthead.menu-open .attendance-menu a strong{font-family:Aperitif,Georgia,serif;font-size:30px;line-height:1.2;font-weight:400}
+ .masthead.menu-open .attendance-menu a span{font-size:16px;line-height:1.5;color:#555}
+}
+main p:not(.eyebrow){font-size:17px!important;line-height:1.8!important}
+main p.eyebrow{font-size:11px!important;line-height:1.7!important;letter-spacing:1.3px}
+main .notice,main .reach-source,main .company-wall-provenance{font-size:13px!important}
+main .hero .hero-copy>p{font-family:Aperitif,Georgia,serif;font-size:clamp(32px,3.5vw,50px)!important;line-height:1.1!important}
+main .hero .hero-event .hero-date{font-family:Aperitif,Georgia,serif;font-size:31px!important;line-height:1.3!important}
+main .hero .hero-time{font-size:14px!important}
+main .honoree-dedication p{font-family:Aperitif,Georgia,serif;font-size:clamp(32px,4.5vw,64px)!important;line-height:1.2!important}
+main .honoree-bio-copy p.honoree-bio-lede{font-size:29px!important;line-height:1.4!important}
+main .honoree-side-label,main .honoree-side-action>p{font-size:11px!important;line-height:1.9!important}
+main .reach-totals p{font-size:14px!important;line-height:1.6!important}
+main .night-small-label{font-size:11px!important;line-height:1.6;letter-spacing:.6px}
+main .night-facts span{font-size:10px}.night-facts p{font-size:15px!important}
+main .textlink,main .night-text-link{font-size:13px!important;line-height:1.7}
+main .btn{font-size:13px;line-height:1.6}
+main .night-ambassador-interest small,main .night-portrait>span{font-size:11px}
+.category-choice{font-size:15px;line-height:1.6;min-height:50px}
+.partner-card-footer{font-size:15px!important}.partner-tile .eyebrow{font-size:11px}
+.modal-panel p{font-size:17px;line-height:1.85}.modal-panel p.eyebrow{font-size:11px}
+.modal-panel .modal-note{font-size:12px!important}
+.footer p,.footer-links{font-size:14px}.footer-bottom{font-size:11px;line-height:1.8}
+/* Clear inherited grid placement on every agenda child, then define one grid. */
+.night-experience .night-agenda>article{grid-template-columns:65px minmax(0,1fr);align-items:start;gap:28px}
+.night-experience .night-agenda{grid-template-columns:minmax(0,1fr)}
+.night-experience .night-agenda :is(.night-number,.night-step-content,.night-step-title,.night-step-content>div,.night-step-content p,.night-step-content h4){grid-column:auto!important;grid-row:auto!important;min-width:0;position:static;transform:none}
+.night-experience .night-agenda .night-step-content{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+.night-experience .night-agenda .night-step-title{grid-column:1/-1!important}
+.night-experience .night-agenda .night-step-content>.night-step-title{grid-column:1/-1!important;grid-row:auto!important}
+.night-experience .night-agenda h4{max-width:none;font-size:36px;line-height:1.15;overflow-wrap:normal;margin:0}
+.night-experience .night-agenda .night-step-content>div{min-width:0}
+.night-experience .night-agenda p:not(.eyebrow){margin:0;overflow-wrap:break-word}
+.night-experience .night-ambassador-teaser{grid-template-columns:1fr 1fr;padding-top:10px;align-items:center}
+.night-experience .night-ambassador-teaser h3{font-size:clamp(43px,4.5vw,65px)}
+.night-experience .night-ambassador-teaser>div>p:not(.eyebrow){color:#555}
+.night-ambassador-teaser .textlink{margin-top:8px}
+/* Ambassador page follows the existing public opportunity and signup. */
+.ambassador-page{background:#fff;color:#111}
+.ambassador-opening{padding:75px 6% 55px;max-width:1600px;margin:auto}
+.ambassador-opening h2{font-size:clamp(63px,8vw,118px);line-height:1.03;letter-spacing:-2.5px;margin:0 0 30px}
+.ambassador-opening>p:not(.eyebrow){max-width:570px;color:#555}
+.ambassador-opening .btn{margin-top:10px}
+.ambassador-facts{display:flex;flex-wrap:wrap;gap:24px 40px;background:#f4f4f2;padding:24px 27px;margin-top:40px;font-size:11px;letter-spacing:.6px;line-height:1.8}
+.ambassador-opportunity{padding:65px 6%;display:grid;grid-template-columns:1fr 1fr;gap:10%;max-width:1600px;margin:auto}
+.ambassador-opportunity h3,.ambassador-signup h3{font-size:clamp(48px,5.3vw,77px);line-height:1.05;letter-spacing:-1.3px;margin-bottom:28px}
+.ambassador-opportunity>div>p:not(.eyebrow){color:#555;max-width:540px}
+.ambassador-responsibilities ol{margin:0;padding-left:23px;font-size:17px;line-height:1.8;color:#444}
+.ambassador-responsibilities li{padding-left:9px;margin-bottom:18px}
+.ambassador-ticket-note{background:#f3f3f1;padding:25px 28px;margin-top:30px}
+.ambassador-ticket-note strong{font-size:16px}.ambassador-ticket-note p{margin:8px 0 0;color:#444}
+.ambassador-signup{background:#f4f4f2;padding:70px 6%;display:grid;grid-template-columns:.85fr 1.15fr;gap:10%;scroll-margin-top:145px;outline:none}
+.ambassador-signup-heading{max-width:380px;align-self:start}
+.ambassador-preview-note{font-size:14px!important;color:#666}
+.ambassador-form{display:grid;gap:25px;max-width:680px;min-width:0}
+.ambassador-form label{display:grid;gap:10px;font-size:14px;line-height:1.6;color:#333;min-width:0}
+.ambassador-form :is(input:not([type=checkbox]),select){width:100%;min-width:0;background:#fff;border:1px solid #b6b6ae;border-radius:0;padding:14px 15px;font-family:Swiss,Arial,sans-serif;font-size:17px;line-height:1.5;color:#111}
+.ambassador-field-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ambassador-form fieldset{padding:0;border:0;margin:0;min-width:0}
+.ambassador-form legend{font-family:Aperitif,Georgia,serif;font-size:27px;line-height:1.3;margin-bottom:12px}
+.ambassador-form .ambassador-form-hint{font-size:14px!important;line-height:1.7!important;color:#666;margin:0 0 17px}
+.ambassador-form label.ambassador-check{display:grid;grid-template-columns:20px minmax(0,1fr);gap:13px;align-items:start;font-size:16px;line-height:1.7;margin-bottom:17px}
+.ambassador-check input{appearance:auto;width:19px;height:19px;margin:5px 0 0;accent-color:#111}
+.ambassador-form .ambassador-consent{font-size:14px;margin:0}
+.ambassador-consent a{text-decoration:underline;text-underline-offset:3px}
+.ambassador-form .btn{width:100%;opacity:1;cursor:pointer}
+.ambassador-form .btn:disabled{opacity:.55;cursor:not-allowed}
+.ambassador-form [data-kind=error]{color:#9c2323!important}
+.ambassador-success{max-width:680px;padding:35px;background:#fff;outline:none;align-self:start}
+.ambassador-form .textlink{justify-self:start}
+.masthead .nav{gap:24px}.masthead .nav>a{font-size:15px;line-height:1.5;font-weight:500;letter-spacing:0}
+.masthead .attendance-nav summary{font-size:14px;letter-spacing:0;padding:13px 16px}
+.page-wayfinder button{font-size:13px}.page-wayfinder>span{font-size:10px}
+.page-wayfinder>span{text-transform:none;letter-spacing:0;font-size:13px;color:#555}
+.page-wayfinder{background:#f0f0ed;border:0;gap:9px;padding:12px 6%;min-height:62px;box-shadow:0 2px 7px #00000006}
+.page-wayfinder button{border:0!important;border-radius:25px;padding:9px 17px;font-size:14px;line-height:1.5;color:#555;min-height:38px}
+.page-wayfinder button:hover{background:#e1e1dc;color:#111}
+.page-wayfinder button.current{background:#111;color:#fff}
+@media(max-width:1100px){.page-wayfinder{padding:10px 6%;min-height:57px;gap:5px}.page-wayfinder button{font-size:13px;padding:8px 14px;min-height:36px}}
+.night-directions{display:inline-block;font-size:13px;line-height:1.7;text-decoration:underline;text-underline-offset:4px;margin-top:10px}
+@media(max-width:1100px){.masthead.menu-open .nav>a{font-size:32px;line-height:1.3}.masthead.menu-open .attendance-nav summary{font-size:16px}.masthead.menu-open .attendance-menu strong{font-size:17px}.masthead.menu-open .attendance-menu span{font-size:14px}.menu-label{font-size:12px}}
+@media(max-width:760px){
+ main p:not(.eyebrow){font-size:16px!important;line-height:1.8!important}
+ main p.eyebrow{font-size:10px!important;letter-spacing:1px}
+ main .honoree-bio-copy p.honoree-bio-lede{font-size:25px!important}
+ main .honoree-side-label,main .honoree-side-action>p{font-size:9px!important}
+ main .honoree-dedication p{font-size:32px!important}
+ main .reach-totals p{font-size:13px!important}
+ .night-experience .night-agenda>article{display:block;padding:28px 24px}
+ .night-experience .night-agenda .night-number{margin-bottom:23px}
+ .night-experience .night-agenda .night-step-content{display:flex;flex-direction:column;gap:25px}
+ .night-experience .night-agenda h4{font-size:32px}
+ .night-experience .night-ambassador-teaser{grid-template-columns:1fr;gap:15px}
+ .ambassador-opening{padding-top:45px;padding-bottom:30px}
+ .ambassador-opening h2{font-size:clamp(47px,10.5vw,75px);letter-spacing:-1.3px;overflow-wrap:break-word}
+ .ambassador-facts{display:grid;gap:12px;padding:23px;font-size:11px;margin-top:30px}
+ .ambassador-opportunity{grid-template-columns:1fr;gap:30px;padding-top:35px;padding-bottom:45px}
+ .ambassador-opportunity h3,.ambassador-signup h3{font-size:47px;line-height:1.08}
+ .ambassador-responsibilities ol{font-size:16px}
+ .ambassador-signup{grid-template-columns:1fr;gap:30px;padding:45px 6%;scroll-margin-top:135px}
+ .ambassador-signup-heading{max-width:none}
+ .ambassador-field-pair{grid-template-columns:1fr;gap:24px}
+ .ambassador-form{gap:24px}.ambassador-form label.ambassador-check{font-size:16px}
+ .ambassador-form legend{font-size:25px}
+ .footer-links{font-size:14px}
+}
+
+/* Compact portraits belong with their agenda chapter. */
+.night-experience .night-agenda .night-step-content>.night-agenda-speakers{grid-column:1/-1!important;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;width:100%;margin:5px 0 0}
+.night-experience .night-agenda-speakers .night-speaker{display:grid;grid-template-columns:112px minmax(0,1fr);gap:22px;align-items:center;min-width:0;border:0;padding:0;margin:0}
+.night-experience .night-agenda-speakers .night-portrait{height:135px;aspect-ratio:auto;width:112px;background:transparent}
+.night-experience .night-agenda-speakers .night-portrait img{object-fit:cover;object-position:center;transform:none}
+.night-experience .night-agenda-speakers .night-portrait::after{display:none}
+.night-experience .night-agenda-speakers .night-speaker-caption{display:block;padding:0;border:0}
+.night-experience .night-agenda-speakers .night-speaker h4{font-size:27px;line-height:1.15;max-width:none;margin:0 0 7px}
+main .night-experience .night-agenda-speakers .night-speaker-caption p{font-size:13px!important;line-height:1.6!important;max-width:none;margin:0;color:#555}
+.night-experience .night-ambassador-teaser{background:#111;color:#fff;padding:65px 6%;margin:35px auto 65px;gap:9%;align-items:center}
+.night-experience .night-ambassador-teaser h3{font-size:clamp(56px,6vw,84px);line-height:1.05;margin-bottom:0}
+.night-experience .night-ambassador-teaser .eyebrow,.night-experience .night-ambassador-teaser>div>p:not(.eyebrow){color:#d1d1cb}
+.night-experience .night-ambassador-teaser .btn{background:#fff;color:#111;border-color:#fff;margin-top:12px;text-transform:none;letter-spacing:0}
+@media(max-width:900px){
+ .night-experience .night-agenda .night-step-content>.night-agenda-speakers{grid-template-columns:1fr;gap:24px}
+}
+@media(max-width:760px){
+ .night-experience .night-ambassador-teaser{padding:45px 6%;margin:10px auto 35px;gap:25px}
+ .night-experience .night-ambassador-teaser h3{font-size:clamp(49px,12vw,70px)}
+ .night-experience .night-agenda-speakers .night-speaker{grid-template-columns:92px minmax(0,1fr);gap:18px}
+ .night-experience .night-agenda-speakers .night-portrait{width:92px;height:111px}
+ .night-experience .night-agenda-speakers .night-speaker h4{font-size:25px}
+ .night-experience .night-agenda-speakers .night-speaker-caption p{max-width:none}
+}
+
+/* Give the attendance invitation its own light closing chapter, not a footer extension. */
+.night-experience .night-attend{background:#fff;color:#111;padding:90px 6% 100px;gap:8%;border-top:0;border-bottom:0}
+.night-experience .night-attend-heading>p:not(.eyebrow),.night-experience .night-attend-options p,.night-experience .night-attend-options article>span{color:#555}
+.night-experience .night-attend-options{display:grid;gap:20px;min-width:0}
+.night-experience .night-attend-options article{background:#f3f3f0;padding:30px 32px;border:0}
+.night-experience .night-attend-options article:last-child{padding-bottom:30px}
+.night-experience .night-attend-options a{color:#111;max-width:100%;line-height:1.6}
+.night-experience .night-attend-heading{align-self:center;min-width:0}
+
+/* A single reading path for the Ambassador introduction and responsibilities. */
+.ambassador-page .ambassador-opening{display:block;columns:auto}
+.ambassador-page .ambassador-opening>p:not(.eyebrow){max-width:680px}
+.ambassador-page .ambassador-opportunity{display:block;max-width:1000px;padding-top:55px;padding-bottom:75px}
+.ambassador-page .ambassador-opportunity>div>p:not(.eyebrow){max-width:none}
+.ambassador-page .ambassador-opportunity h3 br{display:none}
+.ambassador-page .ambassador-opportunity h3 em::before{content:' '}
+.ambassador-page .ambassador-responsibilities{margin-top:40px;padding-top:35px;border-top:1px solid #deded8}
+.ambassador-page .ambassador-ticket-note{margin-top:30px}
+@media(max-width:760px){
+ .night-experience .night-attend{padding:55px 6% 65px;gap:32px;grid-template-columns:minmax(0,1fr)}
+ .night-experience .night-attend h3{font-size:clamp(49px,12vw,65px);line-height:1.05}
+ .night-experience .night-attend-options article{padding:27px 24px}
+ .night-experience .night-attend-options article:last-child{padding-bottom:27px}
+ .ambassador-page .ambassador-opportunity{padding-top:35px;padding-bottom:50px}
+ .ambassador-page .ambassador-responsibilities{margin-top:30px;padding-top:28px}
+}
+.category-picker{display:none}
+@media(max-width:900px){
+ #categories .category-grid{grid-template-columns:minmax(0,1fr);gap:24px}
+ #categories .category-menu{display:none}
+ #categories .category-picker{display:flex;flex-direction:column;gap:10px;min-width:0}
+ .category-picker>span{font-size:16px;line-height:1.5;color:#555}
+ .category-picker select{display:block;width:100%;max-width:100%;min-height:56px;padding:12px 16px;background:#fff;color:#111;border:1px solid #aaa;border-radius:0;font:inherit;font-size:18px;line-height:1.5;cursor:pointer}
+ .category-picker select:focus-visible{outline:2px solid #111;outline-offset:4px}
+}
+.footer .footer-bottom{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 28px}
+.footer-legal{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;font:inherit;letter-spacing:inherit}
+.footer-legal a:hover{text-decoration:underline;text-underline-offset:4px;color:#fff}

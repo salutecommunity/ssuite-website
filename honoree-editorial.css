@@ -1,0 +1,78 @@
+.honoree-editorial{display:none}
+#honorees:not(.home-honoree){max-width:none;padding:0;background:#fff}
+#honorees:not(.home-honoree)>.sectionhead,#honorees:not(.home-honoree)>.honoree,#honorees:not(.home-honoree)>.notice{display:none}
+#honorees:not(.home-honoree) .honoree-editorial{display:block}
+.honoree-folio{display:flex;justify-content:space-between;gap:25px;padding:35px 6% 28px;font-size:9px;letter-spacing:1.7px;line-height:1.6;color:#555}
+.honoree-cover{margin:0 4%;position:relative;background:#193d37;overflow:hidden}
+.honoree-cover>img{width:100%;height:clamp(480px,62vw,850px);display:block;object-fit:cover;object-position:center 26%}
+.honoree-cover>figcaption{position:absolute;bottom:24px;left:28px;font-size:8px;letter-spacing:1.5px;color:#fff;background:#0008;padding:8px 12px;line-height:1.6}
+.honoree-nameplate{display:grid;grid-template-columns:1fr 2.2fr 1fr;align-items:center;gap:25px;padding:60px 6% 65px}
+.honoree-nameplate h2{font-size:clamp(110px,15vw,230px);line-height:.79;letter-spacing:-7px;text-align:center;margin:0;font-weight:400}
+.honoree-nameplate h2 em{font-style:italic}
+.honoree-side-label,.honoree-side-action>p{font-size:9px;letter-spacing:1.5px;line-height:2;color:#666;margin:0}
+.honoree-side-action{text-align:right}
+.honoree-side-action .textlink{margin-top:22px;background:none;border:0;border-bottom:1px solid #111;padding:8px 0;color:#111;font-size:10px;text-transform:none;letter-spacing:0}
+.honoree-dedication{padding:40px 12% 80px;max-width:1440px;margin:auto;text-align:center}
+.honoree-dedication p{font-family:Aperitif,Georgia,serif;font-size:clamp(30px,4.5vw,64px);line-height:1.18;letter-spacing:-1px;margin:0}
+.honoree-bio{display:grid;grid-template-columns:1fr 1.6fr;gap:12%;padding:80px 9%;background:#f4f4f2;scroll-margin-top:115px;outline:none}
+.honoree-bio-heading{position:sticky;top:135px;align-self:start}
+.honoree-bio-heading .eyebrow{font-size:8px;letter-spacing:1.6px;color:#666;line-height:1.8}
+.honoree-bio h3{font-size:clamp(70px,9vw,130px);line-height:.95;letter-spacing:-3px;margin:0}
+.honoree-bio-copy p{font-size:15px;line-height:1.9;color:#444;margin-bottom:23px}
+.honoree-bio-copy p.honoree-bio-lede{font-family:Aperitif,Georgia,serif;font-size:29px;line-height:1.4;color:#111;margin-bottom:30px}
+.honoree-bio-copy .textlink{font-size:10px;margin-top:10px}
+.honoree-conversation{padding:90px 6%;display:grid;grid-template-columns:.8fr 1.2fr;gap:9%;align-items:center;max-width:1500px;margin:auto}
+.honoree-conversation-photo img{width:100%;aspect-ratio:.86;object-fit:cover;object-position:center 20%;display:block}
+.honoree-conversation-copy h3{font-size:clamp(45px,5.3vw,79px);line-height:1.1;letter-spacing:-1.7px}
+.honoree-conversation-copy>p:not(.eyebrow){font-size:14px;line-height:1.8;color:#555;max-width:380px}
+.honoree-conversation-copy .eyebrow{font-size:8px;line-height:1.8}
+.honoree-conversation-copy .textlink{margin-top:15px}
+.honoree-upcoming{padding:0 6% 65px;max-width:1500px;margin:0 auto;font-size:12px;line-height:1.8;color:#666}
+.honoree-quote{background:#000;color:#fff;text-align:center;padding:65px 10% 75px;margin:0}
+.honoree-quote blockquote{font-family:Aperitif,Georgia,serif;font-size:clamp(37px,5.4vw,78px);font-weight:400;line-height:1.15;letter-spacing:-1.4px;margin:0 auto 30px;max-width:1120px;text-transform:none}
+.honoree-quotation-mark{display:block;font-family:Aperitif,Georgia,serif;font-size:115px;line-height:.75;height:80px;color:#aaa;margin-bottom:25px}
+.honoree-quote blockquote em{font-family:Aperitif,Georgia,serif;font-style:italic}
+main .honoree-quote .honoree-quote-credit{color:#fff;margin:0 0 7px;font-size:21px!important;letter-spacing:0;text-transform:none;font-family:Aperitif,Georgia,serif}
+main .honoree-quote .honoree-quote-title{color:#ccc;margin:0;font-size:14px!important;line-height:1.7!important}
+main .honoree-quote .honoree-quote-honor{color:#aaa;margin:6px 0 0;font-size:13px!important;line-height:1.7!important}
+.honoree-anu-bio{background:#fff;padding-top:0;padding-bottom:90px}
+.honoree-book{display:grid;grid-template-columns:.75fr 1.25fr;gap:12%;align-items:center;background:#f4f4f2;padding:80px 9%}
+.honoree-book-cover{display:flex;align-items:center;justify-content:center;padding:10px 0}
+.honoree-book-cover img{display:block;width:100%;max-width:310px;height:auto;box-shadow:12px 18px 32px #0002}
+.honoree-book h3{font-size:clamp(60px,7vw,100px);letter-spacing:-2px;line-height:.97;margin-bottom:22px}
+.honoree-book>div>p{color:#555}
+.honoree-book .textlink{margin-top:10px}
+.honoree-social{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:50px;padding:60px 6%;max-width:1500px;margin:auto}
+.honoree-social a{display:flex;flex-direction:column;gap:17px;padding:10px 0}
+.honoree-social span{font-size:12px;color:#666;line-height:1.6}
+.honoree-social strong{font-family:Aperitif,Georgia,serif;font-weight:400;font-size:37px;line-height:1.2}
+@media(max-width:760px){
+ .honoree-folio{font-size:7px;letter-spacing:.7px;padding:25px 6% 20px;gap:20px}
+ .honoree-folio span:last-child{text-align:right}
+ .honoree-cover{margin:0 5%}
+ .honoree-cover>img{height:auto;aspect-ratio:.86;object-position:center 24%}
+ .honoree-cover>figcaption{left:12px;bottom:14px;right:12px;font-size:6px;letter-spacing:.7px;width:max-content;max-width:calc(100% - 24px);padding:6px 8px}
+ .honoree-nameplate{grid-template-columns:1fr 1fr;padding:35px 6% 40px;gap:28px 15px}
+ .honoree-nameplate h2{grid-column:1/-1;grid-row:1;font-size:clamp(96px,25vw,180px);letter-spacing:-4px;line-height:.85}
+ .honoree-side-label,.honoree-side-action>p{font-size:7px;letter-spacing:.7px;line-height:1.9}
+ .honoree-side-action .textlink{font-size:10px;margin-top:10px}
+ .honoree-dedication{padding:5px 8% 50px}
+ .honoree-dedication p{font-size:32px;letter-spacing:-.5px}
+ .honoree-bio{grid-template-columns:1fr;padding:48px 7%;gap:30px;scroll-margin-top:100px}
+ .honoree-bio-heading{position:static}
+ .honoree-bio h3{font-size:65px;line-height:1;letter-spacing:-1.5px}
+ .honoree-bio h3 br{display:none}
+ .honoree-bio-copy p{font-size:14px;line-height:1.85}
+ .honoree-bio-copy p.honoree-bio-lede{font-size:26px}
+ .honoree-conversation{grid-template-columns:1fr;gap:30px;padding:50px 6%}
+ .honoree-conversation-photo img{aspect-ratio:1.05}
+ .honoree-conversation-copy h3{font-size:48px;line-height:1.1;letter-spacing:-1px}
+ .honoree-upcoming{padding-bottom:45px}
+ .honoree-quote{padding:50px 7%}.honoree-quote blockquote{font-size:37px;letter-spacing:-.5px;line-height:1.2}
+ .honoree-anu-bio{padding-top:0;padding-bottom:45px}
+ .honoree-book{grid-template-columns:1fr;gap:35px;padding:45px 7%}
+ .honoree-book-cover img{max-width:230px}.honoree-book h3{font-size:63px}
+ .honoree-social{grid-template-columns:1fr;gap:20px;padding:35px 6%}
+ .honoree-social a{flex-direction:row;align-items:center;justify-content:space-between}
+ .honoree-social strong{font-size:30px}
+}
