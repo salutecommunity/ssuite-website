@@ -62,3 +62,50 @@
   document.querySelector('.reach-source')?.remove();
  }
 })();
+
+// Draw directional marks as vectors, never platform-dependent emoji glyphs.
+// Observe text updates too: category selection and route links are built later.
+(()=>{
+ const ns='http://www.w3.org/2000/svg';
+ const paths={
+  '↗':'M5 19 19 5M5 5h14v14',
+  '↘':'M5 5 19 19M5 19h14V5',
+  '↙':'M19 5 5 19M5 5v14h14',
+  '↖':'M19 19 5 5M5 19V5h14',
+  '→':'M4 12h16m-7-7 7 7-7 7',
+  '←':'M20 12H4m7-7-7 7 7 7',
+  '↓':'M12 4v16m-7-7 7 7 7-7',
+  '↑':'M12 20V4m-7 7 7-7 7 7',
+  '⌄':'m5 9 7 7 7-7'
+ };
+ const marks=/[↗↘↙↖→←↓↑⌄]\uFE0F?/gu;
+ function vector(mark){
+  const svg=document.createElementNS(ns,'svg');
+  svg.setAttribute('class','direction-icon');svg.setAttribute('viewBox','0 0 24 24');
+  svg.setAttribute('width','24');svg.setAttribute('height','24');
+  svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');
+  const path=document.createElementNS(ns,'path');path.setAttribute('d',paths[mark[0]]);
+  path.setAttribute('fill','none');path.setAttribute('stroke','currentColor');
+  path.setAttribute('stroke-width','1.5');path.setAttribute('stroke-linecap','square');
+  path.setAttribute('stroke-linejoin','miter');svg.append(path);return svg;
+ }
+ function convert(node){
+  if(!node.parentElement||node.parentElement.closest('script,style,textarea,option,svg,[contenteditable]'))return;
+  const text=node.nodeValue;marks.lastIndex=0;if(!marks.test(text))return;marks.lastIndex=0;
+  const fragment=document.createDocumentFragment();let start=0;
+  for(const match of text.matchAll(marks)){
+   fragment.append(document.createTextNode(text.slice(start,match.index)),vector(match[0]));start=match.index+match[0].length;
+  }
+  fragment.append(document.createTextNode(text.slice(start)));node.replaceWith(fragment);
+ }
+ function scan(root){
+  if(root.nodeType===Node.TEXT_NODE){convert(root);return;}
+  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];
+  while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(convert);
+ }
+ scan(document.body);
+ new MutationObserver(records=>records.forEach(record=>{
+  if(record.type==='characterData')convert(record.target);
+  else record.addedNodes.forEach(scan);
+ })).observe(document.body,{childList:true,subtree:true,characterData:true});
+})();
