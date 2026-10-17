@@ -204,3 +204,11 @@ main .honoree-dedication p{max-width:23ch;margin:0 auto;font-size:clamp(30px,4vw
  .honoree-dedication{padding:12px 7% 48px}
  main .honoree-dedication p{font-size:clamp(28px,7.5vw,36px)!important;line-height:1.32!important;max-width:23ch}
 }
+/* Route-owned community content must never paint over another page's footer.
+   Explicit descendant visibility keeps inactive image/text paint hidden too. */
+main > [hidden],main > .view-hidden{display:none!important;visibility:hidden!important}
+main > [hidden] *,main > .view-hidden *{visibility:hidden!important}
+body[data-view]:not([data-view="about"]) .community-company-wall{display:none!important;visibility:hidden!important}
+/* Keep the legal row in the same opaque paint boundary as the closing wordmark. */
+.footer{position:relative;isolation:isolate;contain:paint;background:#000}
+.footer .footer-bottom{position:relative;background:inherit}

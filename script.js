@@ -20,7 +20,30 @@ grid.replaceChildren();const categoryMenu=document.createElement('div');category
 const categoryPicker=document.createElement('label');categoryPicker.className='category-picker';categoryPicker.innerHTML='<span>Choose a category</span><select class="select" aria-label="Recognition category"></select>';const categorySelect=categoryPicker.querySelector('select');cats.forEach(c=>{const option=document.createElement('option');option.value=c.title;option.textContent=categoryLabel(c);categorySelect.append(option)});categoryMenu.before(categoryPicker);categorySelect.addEventListener('change',()=>{const category=cats.find(c=>c.title===categorySelect.value);if(category)selectCategory(category)});new MutationObserver(()=>{const selected=categoryMenu.querySelector('.selected');if(selected)categorySelect.value=selected.dataset.title}).observe(categoryMenu,{attributes:true,subtree:true,attributeFilter:['class']});
 function selectCategory(c){categoryMenu.querySelectorAll('button').forEach(b=>{b.classList.toggle('selected',b.dataset.title===c.title);b.setAttribute('aria-pressed',String(b.dataset.title===c.title))});categoryDetail.innerHTML=`${c.image?`<img src="${c.image}" alt="Original S.Suite ${c.title.toLowerCase()} artwork">`:`<div class="newart"><div>${c.title==='HEALTH'?'Health':'Civic & Legal'}<small>ARTWORK TO BE CONFIRMED</small></div></div>`}<p class="eyebrow">THE S.SUITE / ${c.new?'NEW CATEGORY':'RECOGNITION'}</p><h3>${c.title==='CIVIC & LEGAL'?'Civic & Legal':c.title.charAt(0)+c.title.slice(1).toLowerCase()}</h3><p>${c.description}</p><p class="notice">Honorees and category lists will be added as they are announced.</p>`}
 cats.forEach(c=>{const b=document.createElement('button');b.className='category-choice';b.dataset.title=c.title;b.innerHTML=`<span>${c.title==='CIVIC & LEGAL'?'Civic & Legal':c.title.charAt(0)+c.title.slice(1).toLowerCase()}</span><span>↗</span>`;b.onclick=()=>selectCategory(c);categoryMenu.append(b)});selectCategory(cats[0]);
-function routeView(){const requested=location.hash.slice(1);const route=['about','honorees','categories','evening','salute','sponsors'].includes(requested)?requested:'home';home.classList.toggle('view-hidden',route!=='home');teaser.classList.toggle('view-hidden',route!=='home');honorees.classList.toggle('view-hidden',!['home','honorees'].includes(route));honorees.classList.toggle('home-honoree',route==='home');about.classList.toggle('view-hidden',route!=='about');categorySection.classList.toggle('view-hidden',route!=='categories');evening.classList.toggle('view-hidden',route!=='evening');salute.classList.toggle('view-hidden',!['about','salute'].includes(route));document.querySelector('#sponsors').classList.toggle('view-hidden',route!=='sponsors');document.querySelectorAll('.nav>a').forEach(a=>a.setAttribute('aria-current',a.hash==='#'+route?'page':'false'));document.querySelector('.attendance-nav').open=false;scrollTo({top:0,behavior:'instant'})}
+function setViewVisible(view,visible){
+ view.classList.toggle('view-hidden',!visible);
+ // Keep native rendering/accessibility state in sync, not just a CSS class.
+ view.hidden=!visible;
+ view.inert=!visible;
+}
+function routeView(){
+ const requested=location.hash.slice(1);
+ const route=['about','honorees','categories','evening','salute','sponsors'].includes(requested)?requested:'home';
+ // Also gives dynamically inserted About content an explicit route boundary.
+ document.body.dataset.view=route;
+ setViewVisible(home,route==='home');
+ setViewVisible(teaser,route==='home');
+ setViewVisible(honorees,['home','honorees'].includes(route));
+ honorees.classList.toggle('home-honoree',route==='home');
+ setViewVisible(about,route==='about');
+ setViewVisible(categorySection,route==='categories');
+ setViewVisible(evening,route==='evening');
+ setViewVisible(salute,['about','salute'].includes(route));
+ setViewVisible(document.querySelector('#sponsors'),route==='sponsors');
+ document.querySelectorAll('.nav>a').forEach(a=>a.setAttribute('aria-current',a.hash==='#'+route?'page':'false'));
+ document.querySelector('.attendance-nav').open=false;
+ scrollTo({top:0,behavior:'instant'});
+}
 addEventListener('hashchange',routeView);routeView();
 function preserveAcronyms(){document.querySelectorAll('.teaser-grid .serif,.category-choice>span:first-child,.category-detail h3').forEach(e=>{if(e.textContent==='Ceo')e.textContent='CEO';if(e.textContent==='The chair')e.textContent='The Chair'})}
 preserveAcronyms();new MutationObserver(preserveAcronyms).observe(categoryDetail,{childList:true});
