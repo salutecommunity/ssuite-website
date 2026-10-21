@@ -1,0 +1,34 @@
+{
+  "redirects": [
+    {
+      "source": "/sponsors",
+      "destination": "/#partners",
+      "permanent": true
+    },
+    {
+      "source": "/sponsors/",
+      "destination": "/#partners",
+      "permanent": true
+    },
+    {
+      "source": "/sponsors/index.html",
+      "destination": "/#partners",
+      "permanent": true
+    },
+    {
+      "source": "/partners",
+      "destination": "/#partners",
+      "permanent": true
+    },
+    {
+      "source": "/partners/",
+      "destination": "/#partners",
+      "permanent": true
+    },
+    {
+      "source": "/partners/index.html",
+      "destination": "/#partners",
+      "permanent": true
+    }
+  ]
+}

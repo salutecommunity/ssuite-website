@@ -27,8 +27,10 @@ function setViewVisible(view,visible){
  view.inert=!visible;
 }
 function routeView(){
- const requested=location.hash.slice(1);
- const route=['about','honorees','categories','evening','salute','sponsors'].includes(requested)?requested:'home';
+ let requested=location.hash.slice(1);
+ // Canonical hash route; keep existing Sponsors shares and bookmarks working.
+ if(requested==='sponsors'){history.replaceState(history.state,'',location.pathname+location.search+'#partners');requested='partners';}
+ const route=['about','honorees','categories','evening','salute','partners'].includes(requested)?requested:'home';
  // Also gives dynamically inserted About content an explicit route boundary.
  document.body.dataset.view=route;
  setViewVisible(home,route==='home');
@@ -39,7 +41,7 @@ function routeView(){
  setViewVisible(categorySection,route==='categories');
  setViewVisible(evening,route==='evening');
  setViewVisible(salute,['about','salute'].includes(route));
- setViewVisible(document.querySelector('#sponsors'),route==='sponsors');
+ setViewVisible(document.querySelector('#sponsors'),route==='partners');
  document.querySelectorAll('.nav>a').forEach(a=>a.setAttribute('aria-current',a.hash==='#'+route?'page':'false'));
  document.querySelector('.attendance-nav').open=false;
  scrollTo({top:0,behavior:'instant'});

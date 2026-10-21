@@ -33,7 +33,7 @@
  const pages={
   about:[['Community','.community-story'],['By the numbers','.community-reach'],['Why S.Suite','.community-suite-story'],['Programs','#salute']],
   evening:[['Our approach','.night-approach'],['Agenda','.night-flow'],['Ambassadors','https://event.ssuite.org/ambassadors'],['The conversation','#recognition-conversation'],['Attend','.night-attend']],
-  sponsors:[['Our partners','.partner-wall'],['Partnerships','.sponsor-paths'],['Host a table','.sponsor-host']],
+  partners:[['Our partners','.partner-wall'],['Partnerships','.sponsor-paths'],['Host a table','.sponsor-host']],
  };
  function updateWayfinder(){
   setOpen(false);pageNav.replaceChildren();
