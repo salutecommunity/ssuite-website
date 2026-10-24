@@ -46,6 +46,47 @@ const ssuitePartners=[
     "source": "User-provided official film poster; https://seatatthetablefilm.com/"
   },
   {
+    "id": "saya",
+    "name": "SAYA",
+    "url": "https://www.saya.org/",
+    "description": "South Asian Youth Action (SAYA) provides year-round youth development programs for underserved New York City youth. Its work includes academic support, college access, career exploration, leadership development, and activities in sports, arts, and STEM.",
+    "source": "https://www.saya.org/; https://www.saya.org/mission",
+    "tier": "Community Partner",
+    "logo": "assets/partners/saya-official.webp",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "imageAlt": "SAYA — South Asian Youth Action official emblem"
+  },
+  {
+    "id": "malai",
+    "name": "MALAI",
+    "url": "https://www.malai.co/",
+    "description": "Founded by Pooja Bavishi, Malai makes handcrafted, eggless ice cream inspired by South Asian ingredients, aromatic spices, and her upbringing. Its flavors draw on Indian traditions, culture, and heritage.",
+    "source": "https://www.malai.co/our-story",
+    "tier": "Community Partner",
+    "logo": "assets/partners/malai-official.webp",
+    "connection": "A Community Partner of the inaugural S.Suite Honors."
+  },
+  {
+    "id": "boomie",
+    "name": "BOOMIE",
+    "url": "https://boomie.rent/",
+    "description": "Boomie is a peer-to-peer platform for renting, lending, and reselling South Asian fashion. Its shared closet includes womenswear, menswear, and accessories, helping people discover occasionwear and earn from pieces they already own.",
+    "source": "https://boomie.rent/",
+    "tier": "Community Partner",
+    "logo": "assets/partners/boomie-official.webp",
+    "connection": "A Community Partner of the inaugural S.Suite Honors."
+  },
+  {
+    "id": "char-by-riya",
+    "name": "Char by Riya",
+    "url": "https://charbyriya.com/",
+    "description": "Char by Riya creates charcuterie boards, grazing tables, and Indo-fusion food experiences for gatherings and celebrations. Its offerings also include private charcuterie workshops and interactive floral experiences through Bloom Bar by Char.",
+    "source": "https://charbyriya.com/",
+    "tier": "Community Partner",
+    "logo": "assets/partners/char-by-riya-official.webp",
+    "connection": "A Community Partner of the inaugural S.Suite Honors."
+  },
+  {
     "id": "audeliss",
     "name": "Audeliss",
     "tier": "Associate Partner",

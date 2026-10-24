@@ -117,3 +117,8 @@ main .supporter-name-wall p{font-family:Aperitif,Georgia,serif;font-size:30px!im
 .partner-tile[data-partner="seat-at-the-table"] .partner-logo-space img{max-height:220px;max-width:100%;object-fit:contain}
 .partner-tier-community .partner-card-footer{margin-top:auto}
 .partner-profile-logo[data-partner="seat-at-the-table"] img{max-height:440px!important;max-width:100%!important}
+
+/* Official community-partner artwork stays intact on readable light surfaces. */
+.partner-tile[data-partner="saya"] .partner-logo-space img{max-height:140px}
+.partner-tile[data-partner="char-by-riya"] .partner-logo-space img{max-height:150px;max-width:100%}
+.partner-profile-logo[data-partner="saya"] img,.partner-profile-logo[data-partner="char-by-riya"] img{max-height:200px!important;max-width:100%!important}
