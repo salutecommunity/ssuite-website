@@ -122,3 +122,24 @@ main .supporter-name-wall p{font-family:Aperitif,Georgia,serif;font-size:30px!im
 .partner-tile[data-partner="saya"] .partner-logo-space img{max-height:140px}
 .partner-tile[data-partner="char-by-riya"] .partner-logo-space img{max-height:150px;max-width:100%}
 .partner-profile-logo[data-partner="saya"] img,.partner-profile-logo[data-partner="char-by-riya"] img{max-height:200px!important;max-width:100%!important}
+
+/* Individual associates share one quiet editorial panel, with equal recognition. */
+.partner-tier-associate .associate-name-group{display:block;background:#f6f4ef;border:0;border-top:1px solid #cfc8b9;border-bottom:1px solid #cfc8b9;padding:40px 38px 44px;margin-top:8px}
+main .associate-name-group .associate-recognition-label{font-family:inherit;font-size:10px;line-height:1.5;letter-spacing:.14em;text-transform:uppercase;text-align:center;color:#625d53;margin:0 0 30px}
+.associate-name-group .supporter-name-wall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 24px;align-items:center;text-align:center}
+main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,serif;font-size:clamp(24px,2.45vw,33px)!important;line-height:1.25!important;font-weight:400;letter-spacing:-.015em;margin:0;color:#27251f}
+/* The authentic white SAYA lockup needs its own brand-purple surface. */
+.partner-tile[data-partner="saya"] .partner-logo-space,.partner-profile-logo[data-partner="saya"]{background:#56307c}
+.partner-tile[data-partner="saya"] .partner-logo-space{padding:22px 16px}
+.partner-tile[data-partner="saya"] .partner-logo-space img{max-width:100%;max-height:125px}
+.partner-profile-logo[data-partner="saya"] img{max-width:100%!important;max-height:180px!important}
+.partner-tile[data-partner="south-asian-trailblazers"] .partner-logo-space{height:230px;padding:0 5px 10px}
+.partner-tile[data-partner="south-asian-trailblazers"] .partner-logo-space img{max-height:220px;max-width:100%;object-fit:contain}
+.partner-profile-logo[data-partner="south-asian-trailblazers"] img{max-height:340px!important;max-width:100%!important}
+@media(max-width:1000px){.associate-name-group .supporter-name-wall{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){
+ .partner-tier-associate .associate-name-group{padding:32px 20px 36px;margin-top:4px}
+ main .associate-name-group .associate-recognition-label{font-size:9px;letter-spacing:.12em;margin-bottom:26px}
+ .associate-name-group .supporter-name-wall{grid-template-columns:minmax(0,1fr);gap:23px}
+ main .associate-name-group .supporter-name-wall p{font-size:29px!important;line-height:1.25!important}
+}
