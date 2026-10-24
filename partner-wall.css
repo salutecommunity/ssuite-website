@@ -111,3 +111,9 @@ main .supporter-name-wall p{font-family:Aperitif,Georgia,serif;font-size:30px!im
  .partner-tier-associate .associate-name-group{grid-column:auto}
  .partner-name-treatment{font-size:25px}
 }
+
+/* The supplied film poster is artwork, not a cropped or reconstructed logo. */
+.partner-tile[data-partner="seat-at-the-table"] .partner-logo-space{height:230px;padding:0 5px 10px}
+.partner-tile[data-partner="seat-at-the-table"] .partner-logo-space img{max-height:220px;max-width:100%;object-fit:contain}
+.partner-tier-community .partner-card-footer{margin-top:auto}
+.partner-profile-logo[data-partner="seat-at-the-table"] img{max-height:440px!important;max-width:100%!important}
