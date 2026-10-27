@@ -151,3 +151,65 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
 .partner-profile-logo[data-partner="gibson-dunn"] img{width:100%;max-width:440px!important}
 .partner-tile[data-partner="third-place-creative"] .partner-logo-space,.partner-profile-logo[data-partner="third-place-creative"]{background:#232323}
 .partner-tile[data-partner="third-place-creative"] .partner-logo-space img{max-width:100%;max-height:140px}
+
+/* Compact recognition grid: intact artwork, less empty space, full-tile targets. */
+.partner-wall .partner-tier-logos{gap:18px}
+.partner-wall .partner-tile{padding:20px 20px 16px}
+.partner-wall .partner-tile .partner-logo-space{height:120px;padding:14px 12px}
+.partner-wall .partner-tile .partner-logo-space img{width:auto;max-width:min(100%,190px);max-height:82px;object-fit:contain}
+.partner-wall .partner-tile .partner-card-footer{min-height:32px;font-size:12px;line-height:1.35;gap:10px;margin-top:auto}
+.partner-wall .partner-card-footer>span:last-child{font-size:18px;flex-shrink:0}
+.partner-wall .partner-tile .partner-name-treatment{font-size:22px;letter-spacing:.025em}
+.partner-wall .partner-tier-executive .partner-tile{max-width:440px}
+.partner-wall .partner-tile[data-partner="gibson-dunn"] .partner-logo-space img{width:100%;max-width:290px;max-height:92px}
+.partner-wall .partner-tile[data-partner="seat-at-the-table"] .partner-logo-space img,
+.partner-wall .partner-tile[data-partner="south-asian-trailblazers"] .partner-logo-space img,
+.partner-wall .partner-tile[data-partner="char-by-riya"] .partner-logo-space img,
+.partner-wall .partner-tile[data-partner="prince-george"] .partner-logo-space img{max-height:100px}
+.partner-wall .partner-tile[data-partner="saya"] .partner-logo-space{padding:14px 12px}
+.partner-wall .partner-tile[data-partner="saya"] .partner-logo-space img{max-width:190px;width:100%;max-height:92px}
+.partner-wall .partner-tile[data-partner="third-place-creative"] .partner-logo-space{padding:16px 12px}
+.partner-wall .partner-tile[data-partner="third-place-creative"] .partner-logo-space img{max-height:88px}
+@media(max-width:1400px){
+ .partner-wall .partner-tier-logos{gap:16px}
+ .partner-wall .partner-tile{padding:16px 16px 12px}
+ .partner-wall .partner-tile .partner-logo-space{height:104px;padding:10px}
+ .partner-wall .partner-tile .partner-logo-space img{max-width:min(100%,165px);max-height:72px}
+ .partner-wall .partner-tile[data-partner="seat-at-the-table"] .partner-logo-space img,
+ .partner-wall .partner-tile[data-partner="south-asian-trailblazers"] .partner-logo-space img,
+ .partner-wall .partner-tile[data-partner="char-by-riya"] .partner-logo-space img,
+ .partner-wall .partner-tile[data-partner="prince-george"] .partner-logo-space img{max-height:88px}
+ .partner-wall .partner-tier-executive .partner-tile{max-width:390px}
+ .partner-wall .partner-tile[data-partner="gibson-dunn"] .partner-logo-space img{max-width:260px;max-height:80px}
+ .partner-wall .partner-tile[data-partner="saya"] .partner-logo-space img{max-width:165px;max-height:76px}
+ .partner-wall .partner-tile[data-partner="third-place-creative"] .partner-logo-space img{max-height:74px}
+}
+@media(max-width:760px){
+ .partner-wall .partner-tier-community .partner-tier-logos,
+ .partner-wall .partner-tier-vendor .partner-tier-logos,
+ .partner-wall .partner-tier-associate .partner-tier-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .partner-wall .partner-tier-associate .associate-name-group{grid-column:1/-1}
+ .partner-wall .partner-tier-heading{margin-bottom:18px}
+ .partner-wall .partner-tile{padding:12px 12px 10px}
+ .partner-wall .partner-tile .partner-logo-space{height:90px;padding:8px 2px}
+ .partner-wall .partner-tile .partner-logo-space img{max-width:100%;max-height:60px}
+ .partner-wall .partner-tile .partner-card-footer{font-size:11px;min-height:32px;gap:6px}
+ .partner-wall .partner-tile .partner-name-treatment{font-size:clamp(14px,3.6vw,21px);letter-spacing:0}
+ .partner-wall .partner-tile[data-partner="seat-at-the-table"] .partner-logo-space img,
+ .partner-wall .partner-tile[data-partner="south-asian-trailblazers"] .partner-logo-space img,
+ .partner-wall .partner-tile[data-partner="char-by-riya"] .partner-logo-space img,
+ .partner-wall .partner-tile[data-partner="prince-george"] .partner-logo-space img{max-height:78px}
+ .partner-wall .partner-tier-executive .partner-tile{max-width:330px}
+ .partner-wall .partner-tile[data-partner="gibson-dunn"] .partner-logo-space img{max-width:230px;max-height:72px}
+ .partner-wall .partner-tile[data-partner="saya"] .partner-logo-space{padding:8px 5px}
+ .partner-wall .partner-tile[data-partner="saya"] .partner-logo-space img{max-width:100%;max-height:70px}
+ .partner-wall .partner-tile[data-partner="third-place-creative"] .partner-logo-space{padding:8px 5px}
+ .partner-wall .partner-tile[data-partner="third-place-creative"] .partner-logo-space img{max-height:70px}
+ /* Keep profile artwork proportionate without suppressing its full-detail view. */
+ .partner-profile-logo{min-height:100px;padding:20px 18px;margin-bottom:22px}
+ .partner-profile-logo img{max-height:75px!important}
+ .partner-profile-logo[data-partner="saya"] img,
+ .partner-profile-logo[data-partner="char-by-riya"] img{max-height:125px!important}
+ .partner-profile-logo[data-partner="seat-at-the-table"] img{max-height:260px!important}
+ .partner-profile-logo[data-partner="south-asian-trailblazers"] img{max-height:220px!important}
+}
