@@ -212,3 +212,11 @@ body[data-view]:not([data-view="about"]) .community-company-wall{display:none!im
 /* Keep the legal row in the same opaque paint boundary as the closing wordmark. */
 .footer{position:relative;isolation:isolate;contain:paint;background:#000}
 .footer .footer-bottom{position:relative;background:inherit}
+
+/* Reserve separate in-flow rows for the full wordmark and event details.
+   Height-aware display type retains the cinematic scale without collisions on laptops. */
+@media(min-width:761px){
+ main .hero{display:flex;flex-direction:column;align-items:stretch;height:auto;min-height:calc(100svh - 82px);max-height:none;padding-bottom:40px}
+ main .hero h1{flex:0 0 auto;font-size:min(29.5vw,max(190px,calc(100svh - 470px)))}
+ main .hero .hero-bottom{position:relative;left:auto;right:auto;bottom:auto;flex:0 0 auto;margin-top:auto;padding-top:24px}
+}

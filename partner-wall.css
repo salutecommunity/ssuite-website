@@ -143,3 +143,11 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
  .associate-name-group .supporter-name-wall{grid-template-columns:minmax(0,1fr);gap:23px}
  main .associate-name-group .supporter-name-wall p{font-size:29px!important;line-height:1.25!important}
 }
+
+/* Authentic official marks, each on a surface that preserves its original colors. */
+.partner-tier-executive .partner-tier-logos{grid-template-columns:minmax(0,1fr)}
+.partner-tier-executive .partner-tile{max-width:640px;width:100%}
+.partner-tile[data-partner="gibson-dunn"] .partner-logo-space img{width:100%;max-width:440px;max-height:130px}
+.partner-profile-logo[data-partner="gibson-dunn"] img{width:100%;max-width:440px!important}
+.partner-tile[data-partner="third-place-creative"] .partner-logo-space,.partner-profile-logo[data-partner="third-place-creative"]{background:#232323}
+.partner-tile[data-partner="third-place-creative"] .partner-logo-space img{max-width:100%;max-height:140px}

@@ -5,6 +5,16 @@ partnerPage.querySelector('.sponsors-opening h2').innerHTML='Our <em>partners.</
 partnerPage.querySelector('.sponsors-opening p:not(.eyebrow)').textContent='Supporting S.Suite and SALUTE’s work to expand visibility, access, and opportunity for South Asian women.';
 const ssuitePartners=[
   {
+    "id": "gibson-dunn",
+    "name": "Gibson Dunn",
+    "tier": "Executive Partner",
+    "logo": "assets/partners/gibson-dunn-official.svg",
+    "url": "https://www.gibsondunn.com/",
+    "description": "Gibson Dunn is a global law firm advising clients on significant disputes and transactions around the world. Its teams develop legal strategies across borders, industries, and markets.",
+    "connection": "An Executive Partner of the inaugural S.Suite Honors.",
+    "source": "https://www.gibsondunn.com/"
+  },
+  {
     "id": "teleperformance",
     "name": "Teleperformance",
     "tier": "Associate Partner",
@@ -66,7 +76,7 @@ const ssuitePartners=[
     "description": "South Asian Trailblazers is a media platform, community, and talent and advisory agency dedicated to elevating South Asian leaders. Its podcast shares their journeys, its events bring the community together, and its agency connects talent with speaking, brand, and consulting opportunities.",
     "connection": "A Community Partner of the inaugural S.Suite Honors.",
     "source": "https://www.southasiantrailblazers.com/about"
-},
+  },
   {
     "id": "malai",
     "name": "MALAI",
@@ -135,12 +145,22 @@ const ssuitePartners=[
     "description": "Nivedha is a freelance photographer based in New York City. Her work centers on storytelling and preserving memories, helping clients document milestones in a way that feels true to them.",
     "connection": "A Vendor Partner of the inaugural S.Suite Honors.",
     "source": "https://nivedhamphotography.mypixieset.com/"
+  },
+  {
+    "id": "third-place-creative",
+    "name": "The Third Place Creative",
+    "tier": "Vendor Partner",
+    "logo": "assets/partners/third-place-creative-official.webp",
+    "url": "https://www.thethirdplacecreative.co/",
+    "description": "The Third Place Creative is a full-service creative agency that grows your community through storytelling by specializing in a social-first content approach.",
+    "connection": "A Vendor Partner of the inaugural S.Suite Honors.",
+    "source": "User-supplied description; https://www.thethirdplacecreative.co/"
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');
 partnerWall.classList.add('partner-wall');
 partnerWall.setAttribute('aria-label','S.Suite partners — select a logo to learn more');
-partnerWall.innerHTML=['Associate Partner','Community Partner','Vendor Partner'].map(tier=>`<section class="partner-tier ${tier==='Associate Partner'?'partner-tier-associate':tier==='Community Partner'?'partner-tier-community':'partner-tier-vendor'}" aria-label="${tier}s"><header class="partner-tier-heading"><h3>${tier}s</h3></header><div class="partner-tier-logos">${ssuitePartners.filter(p=>p.tier===tier).map(p=>`<button type="button" class="partner-tile" data-partner="${p.id}" aria-label="Learn more about ${p.name}, ${p.tier}" aria-haspopup="dialog"><span class="partner-logo-space">${p.logo?`<img src="${p.logo}" alt="${p.imageAlt||`${p.name} logo`}" loading="lazy">`:'<span class="partner-name-treatment">NIVEDHA M.<br>PHOTOGRAPHY</span>'}</span><span class="partner-card-footer"><span>${p.name}</span><span aria-hidden="true">↗</span></span></button>`).join('')}${tier==='Associate Partner'?'<section class="associate-name-group" aria-label="Individual Associate Partners"><p class="associate-recognition-label">Individual Associate Partners</p><div class="supporter-name-wall"><p>Jaime Patel</p><p>Manisha Bharti</p><p>Megha Desai</p><p>Sheila Bangalore</p><p>Nandita Bakhshi</p><p>Sri Murthy</p></div></section>':''}</div></section>`).join('');
+partnerWall.innerHTML=['Executive Partner','Associate Partner','Community Partner','Vendor Partner'].map(tier=>`<section class="partner-tier ${tier==='Executive Partner'?'partner-tier-executive':tier==='Associate Partner'?'partner-tier-associate':tier==='Community Partner'?'partner-tier-community':'partner-tier-vendor'}" aria-label="${tier}s"><header class="partner-tier-heading"><h3>${tier}s</h3></header><div class="partner-tier-logos">${ssuitePartners.filter(p=>p.tier===tier).map(p=>`<button type="button" class="partner-tile" data-partner="${p.id}" aria-label="Learn more about ${p.name}, ${p.tier}" aria-haspopup="dialog"><span class="partner-logo-space">${p.logo?`<img src="${p.logo}" alt="${p.imageAlt||`${p.name} logo`}" loading="lazy">`:'<span class="partner-name-treatment">NIVEDHA M.<br>PHOTOGRAPHY</span>'}</span><span class="partner-card-footer"><span>${p.name}</span><span aria-hidden="true">↗</span></span></button>`).join('')}${tier==='Associate Partner'?'<section class="associate-name-group" aria-label="Individual Associate Partners"><p class="associate-recognition-label">Individual Associate Partners</p><div class="supporter-name-wall"><p>Jaime Patel</p><p>Manisha Bharti</p><p>Megha Desai</p><p>Sheila Bangalore</p><p>Nandita Bakhshi</p><p>Sri Murthy</p></div></section>':''}</div></section>`).join('');
 partnerWall.querySelectorAll('button').forEach(button=>button.addEventListener('click',()=>{
  const p=ssuitePartners.find(partner=>partner.id===button.dataset.partner);
  openModal(`<div class="partner-profile-body"><div class="partner-profile-logo" data-partner="${p.id}">${p.logo?`<img src="${p.logo}" alt="${p.imageAlt||`${p.name} logo`}">`:'<span class="partner-name-treatment">NIVEDHA M.<br>PHOTOGRAPHY</span>'}</div><p class="eyebrow">${p.tier}</p><h2 id="modal-title">${p.name}</h2><p>${p.description}</p><div class="partner-profile-role"><strong>WITH S.SUITE</strong><p>${p.connection}</p></div><a class="textlink" href="${p.url}" target="_blank" rel="noopener noreferrer">Visit ${p.name} ↗</a></div>`);
