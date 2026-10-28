@@ -119,6 +119,17 @@ const ssuitePartners=[
     "source": "https://theculturetree.com/"
   },
   {
+    "id": "kulture-khazana",
+    "name": "Kulture Khazana",
+    "tier": "Community Partner",
+    "logo": "assets/partners/kulture-khazana-official.png",
+    "imageAlt": "Kulture Khazana official logo",
+    "url": "https://kulturekhazana.com/",
+    "description": "Kulture Khazana creates toys, crafts, puzzles, books, and festival kits that connect families with South Asian culture through hands-on play. Founded by mom and cultural educator Akruti Babaria, the brand helps families share Indian traditions and festivals with children.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://kulturekhazana.com/"
+  },
+  {
     "id": "audeliss",
     "name": "Audeliss",
     "tier": "Associate Partner",
