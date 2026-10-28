@@ -108,6 +108,17 @@ const ssuitePartners=[
     "connection": "A Community Partner of the inaugural S.Suite Honors."
   },
   {
+    "id": "the-culture-tree",
+    "name": "The Culture Tree",
+    "tier": "Community Partner",
+    "logo": "assets/partners/culture-tree-official.webp",
+    "imageAlt": "The Culture Tree official logo",
+    "url": "https://theculturetree.com/",
+    "description": "The Culture Tree creates inclusive platforms that amplify South Asian voices through cultural programs, education, language classes, and community gatherings. Its programs explore festivals, food, identity, and representation to nurture South Asian community in America.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://theculturetree.com/"
+  },
+  {
     "id": "audeliss",
     "name": "Audeliss",
     "tier": "Associate Partner",
@@ -160,7 +171,7 @@ const ssuitePartners=[
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');
 partnerWall.classList.add('partner-wall');
 partnerWall.setAttribute('aria-label','S.Suite partners — select a logo to learn more');
-partnerWall.innerHTML=['Executive Partner','Associate Partner','Community Partner','Vendor Partner'].map(tier=>`<section class="partner-tier ${tier==='Executive Partner'?'partner-tier-executive':tier==='Associate Partner'?'partner-tier-associate':tier==='Community Partner'?'partner-tier-community':'partner-tier-vendor'}" aria-label="${tier}s"><header class="partner-tier-heading"><h3>${tier}s</h3></header><div class="partner-tier-logos">${ssuitePartners.filter(p=>p.tier===tier).map(p=>`<button type="button" class="partner-tile" data-partner="${p.id}" aria-label="Learn more about ${p.name}, ${p.tier}" aria-haspopup="dialog"><span class="partner-logo-space">${p.logo?`<img src="${p.logo}" alt="${p.imageAlt||`${p.name} logo`}" loading="lazy">`:'<span class="partner-name-treatment">NIVEDHA M.<br>PHOTOGRAPHY</span>'}</span><span class="partner-card-footer"><span>${p.name}</span><span aria-hidden="true">↗</span></span></button>`).join('')}${tier==='Associate Partner'?'<section class="associate-name-group" aria-label="Individual Associate Partners"><p class="associate-recognition-label">Individual Associate Partners</p><div class="supporter-name-wall"><p>Jaime Patel</p><p>Manisha Bharti</p><p>Megha Desai</p><p>Sheila Bangalore</p><p>Nandita Bakhshi</p><p>Sri Murthy</p></div></section>':''}</div></section>`).join('');
+partnerWall.innerHTML=['Executive Partner','Associate Partner','Community Partner','Vendor Partner'].map(tier=>`<section class="partner-tier ${tier==='Executive Partner'?'partner-tier-executive':tier==='Associate Partner'?'partner-tier-associate':tier==='Community Partner'?'partner-tier-community':'partner-tier-vendor'}" aria-label="${tier}s"><header class="partner-tier-heading"><h3>${tier}s</h3></header><div class="partner-tier-logos">${ssuitePartners.filter(p=>p.tier===tier).map(p=>`<button type="button" class="partner-tile" data-partner="${p.id}" aria-label="Learn more about ${p.name}, ${p.tier}" aria-haspopup="dialog"><span class="partner-logo-space">${p.logo?`<img src="${p.logo}" alt="${p.imageAlt||`${p.name} logo`}" loading="lazy">`:'<span class="partner-name-treatment">NIVEDHA M.<br>PHOTOGRAPHY</span>'}</span><span class="partner-card-footer"><span>${p.name}</span><span aria-hidden="true">↗</span></span></button>`).join('')}${tier==='Associate Partner'?'<section class="associate-name-group" aria-label="Individual Associate Partners"><p class="associate-recognition-label">Individual Associate Partners</p><div class="supporter-name-wall"><p>Jaime Patel</p><p>Manisha Bharti</p><p>Megha Desai</p><p>Nandita Bakhshi</p><p>Sri Murthy</p><p>Jyothi Rao</p><p>Rebecca Parekh</p></div></section>':''}</div></section>`).join('');
 partnerWall.querySelectorAll('button').forEach(button=>button.addEventListener('click',()=>{
  const p=ssuitePartners.find(partner=>partner.id===button.dataset.partner);
  openModal(`<div class="partner-profile-body"><div class="partner-profile-logo" data-partner="${p.id}">${p.logo?`<img src="${p.logo}" alt="${p.imageAlt||`${p.name} logo`}">`:'<span class="partner-name-treatment">NIVEDHA M.<br>PHOTOGRAPHY</span>'}</div><p class="eyebrow">${p.tier}</p><h2 id="modal-title">${p.name}</h2><p>${p.description}</p><div class="partner-profile-role"><strong>WITH S.SUITE</strong><p>${p.connection}</p></div><a class="textlink" href="${p.url}" target="_blank" rel="noopener noreferrer">Visit ${p.name} ↗</a></div>`);

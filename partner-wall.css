@@ -213,3 +213,6 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
  .partner-profile-logo[data-partner="seat-at-the-table"] img{max-height:260px!important}
  .partner-profile-logo[data-partner="south-asian-trailblazers"] img{max-height:220px!important}
 }
+
+/* Balance the final name in the seven-person recognition panel. */
+.associate-name-group .supporter-name-wall p:last-child:nth-child(7){grid-column:1/-1;justify-self:center}
