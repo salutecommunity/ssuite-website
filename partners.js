@@ -130,6 +130,28 @@ const ssuitePartners=[
     "source": "https://kulturekhazana.com/"
   },
   {
+    "id": "knead-some-love-ny",
+    "name": "Knead Some Love NY",
+    "tier": "Community Partner",
+    "logo": "assets/partners/knead-some-love-ny-official.png",
+    "imageAlt": "Knead Some Love NY official logo",
+    "url": "https://kneadsomeloveny.com/",
+    "description": "Knead Some Love NY creates Indian-fusion baked donuts inspired by traditional mithai. Founded by Priyanka Poddar, the brand reimagines familiar South Asian sweets, flavors, and ingredients in handcrafted, baked-not-fried donuts.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://kneadsomeloveny.com/pages/about"
+  },
+  {
+    "id": "mubarak-and-co",
+    "name": "Mubarak & Co",
+    "tier": "Community Partner",
+    "logo": "assets/partners/mubarak-and-co-official.png",
+    "imageAlt": "Mubarak & Co official logo",
+    "url": "https://www.mubarakandco.com/",
+    "description": "Mubarak & Co creates celebration goods for Ramadan, Eid, and meaningful milestones. Its collections include greeting cards, Eidee money envelopes, gift bags, wrapping paper, and jewelry, bringing contemporary design to Muslim celebrations and everyday gifting.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://www.mubarakandco.com/"
+  },
+  {
     "id": "audeliss",
     "name": "Audeliss",
     "tier": "Associate Partner",
