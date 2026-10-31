@@ -152,6 +152,17 @@ const ssuitePartners=[
     "source": "https://www.mubarakandco.com/"
   },
   {
+    "id": "silk-and-sonder",
+    "name": "Silk + Sonder",
+    "tier": "Community Partner",
+    "logo": "assets/partners/silk-and-sonder-official.png",
+    "imageAlt": "Silk + Sonder official wordmark",
+    "url": "https://www.silkandsonder.com/",
+    "description": "Silk + Sonder creates guided journals and planners for reflection, goal setting, and everyday self-care. Its monthly journals combine prompts, exercises, and mood, habit, and sleep trackers with access to an app, online community, and live classes and workshops.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://www.silkandsonder.com/"
+  },
+  {
     "id": "audeliss",
     "name": "Audeliss",
     "tier": "Associate Partner",
@@ -199,6 +210,17 @@ const ssuitePartners=[
     "description": "The Third Place Creative is a full-service creative agency that grows your community through storytelling by specializing in a social-first content approach.",
     "connection": "A Vendor Partner of the inaugural S.Suite Honors.",
     "source": "User-supplied description; https://www.thethirdplacecreative.co/"
+  },
+  {
+    "id": "slate-and-fold",
+    "name": "Slate & Fold",
+    "tier": "Vendor Partner",
+    "logo": "assets/partners/slate-and-fold-provided.jpeg",
+    "imageAlt": "Slate & Fold Packaging logo",
+    "url": "https://slateandfold.com/",
+    "description": "Slate & Fold provides gift boxes and packaging for product brands, corporate gifts, weddings, and events. Its offerings range from ready-to-ship boxes and logo printing on eligible folding boxes to custom packaging developed around a product’s dimensions, materials, and presentation needs.",
+    "connection": "A Vendor Partner of the inaugural S.Suite Honors.",
+    "source": "https://slateandfold.com/; user-supplied logo"
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');
