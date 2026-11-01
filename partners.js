@@ -254,6 +254,17 @@ const ssuitePartners=[
     "description": "Slate & Fold provides gift boxes and packaging for product brands, corporate gifts, weddings, and events. Its offerings range from ready-to-ship boxes and logo printing on eligible folding boxes to custom packaging developed around a product’s dimensions, materials, and presentation needs.",
     "connection": "A Vendor Partner of the inaugural S.Suite Honors.",
     "source": "https://slateandfold.com/; user-supplied logo"
+  },
+  {
+    "id": "by-seema",
+    "name": "by seema",
+    "tier": "Vendor Partner",
+    "logo": "assets/partners/by-seema-official.webp",
+    "imageAlt": "by seema official interlocking wedding rings logo",
+    "url": "https://www.byseema.com/",
+    "description": "by seema is an NYC-based wedding planning and coordination business specializing in South Asian and multicultural weddings in New York City and beyond. Its services include full planning, partial planning, and month-of coordination, with a focus on celebrations that reflect each couple’s story.",
+    "connection": "A Vendor Partner of the inaugural S.Suite Honors.",
+    "source": "https://www.byseema.com/"
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');

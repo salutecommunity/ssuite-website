@@ -216,3 +216,6 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
 
 /* Balance the final name in the seven-person recognition panel. */
 .associate-name-group .supporter-name-wall p:last-child:nth-child(7){grid-column:1/-1;justify-self:center}
+
+/* Official cream by seema artwork requires a dark surface; original pixels unchanged. */
+.partner-tile[data-partner="by-seema"] .partner-logo-space,.partner-profile-logo[data-partner="by-seema"]{background:#232323}
