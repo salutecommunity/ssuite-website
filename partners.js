@@ -25,6 +25,17 @@ const ssuitePartners=[
     "source": "https://www.tp.com/media/vzwfxxfo/logo.svg?quality=80"
   },
   {
+    "id": "sakhi",
+    "name": "SAKHI",
+    "tier": "Community Partner",
+    "logo": "assets/partners/sakhi-provided.png",
+    "imageAlt": "SAKHI — For South Asian Survivors",
+    "url": "https://sakhi.org/",
+    "description": "Sakhi for South Asian Survivors represents the South Asian and Indo-Caribbean diaspora in a survivor-led movement for gender justice. The organization supports survivors of gender-based violence and provides a helpline connecting people with support.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://sakhi.org/"
+  },
+  {
     "id": "pratham-usa",
     "name": "Pratham USA",
     "tier": "Community Partner",
