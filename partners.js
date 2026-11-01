@@ -163,6 +163,28 @@ const ssuitePartners=[
     "source": "https://www.silkandsonder.com/"
   },
   {
+    "id": "desi-daughters",
+    "name": "Desi Daughters",
+    "tier": "Community Partner",
+    "logo": "assets/partners/desi-daughters-official.png",
+    "imageAlt": "Desi Daughters official logo",
+    "url": "https://www.desidaughters.com/",
+    "description": "Desi Daughters supports South Asian American families navigating care for aging parents. Its community connects families with culturally relevant elder-care resources, practical recommendations, shared experiences, and organizations that can help them find their next step.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://www.desidaughters.com/about-us"
+  },
+  {
+    "id": "jazba-collective",
+    "name": "The Jazba Collective",
+    "tier": "Community Partner",
+    "logo": "assets/partners/jazba-collective-official.png",
+    "imageAlt": "The Jazba Collective — Elevating South Asian Brands official logo",
+    "url": "https://www.thejazbacollective.org/",
+    "description": "The Jazba Collective is a nonprofit dedicated to elevating South Asian brands across North America. Through community engagement, education, and shared networks, it connects founders with one another and with retailers, wholesalers, influencers, capital providers, and media.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://www.thejazbacollective.org/"
+  },
+  {
     "id": "audeliss",
     "name": "Audeliss",
     "tier": "Associate Partner",
