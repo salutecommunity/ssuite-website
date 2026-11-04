@@ -196,6 +196,39 @@ const ssuitePartners=[
     "source": "https://www.thejazbacollective.org/"
   },
   {
+    "id": "neythri",
+    "name": "Neythri",
+    "tier": "Community Partner",
+    "logo": "assets/partners/neythri-official.png",
+    "imageAlt": "Neythri official logo",
+    "url": "https://www.neythri.org/",
+    "description": "Neythri fosters a global community of South Asian professional women across backgrounds, generations, and industries. Its platform supports connection, mentoring, shared learning, and leadership development to help members grow and support one another.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://www.neythri.org/"
+  },
+  {
+    "id": "south-asian-soar",
+    "name": "South Asian SOAR",
+    "tier": "Community Partner",
+    "logo": "assets/partners/south-asian-soar-official.webp",
+    "imageAlt": "South Asian SOAR official logo",
+    "url": "https://www.southasiansoar.org/",
+    "description": "South Asian SOAR brings together survivors, advocates, organizations, and allies to end gender-based violence in the South Asian diaspora. Its work includes training and resources for direct-service organizations, community education and storytelling, research, and advocacy.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://www.southasiansoar.org/"
+  },
+  {
+    "id": "sami",
+    "name": "SAMI",
+    "tier": "Community Partner",
+    "logo": "assets/partners/sami-home-official.png",
+    "imageAlt": "SAMI — South Asian Museum Initiative official brand artwork",
+    "url": "https://southasianmi.org/",
+    "description": "The South Asian Museum Initiative (SAMI) is a community-driven nonprofit dedicated to elevating South Asian art, history, and culture in museums and cultural institutions. Its work supports museum acquisitions, artist residencies, educational programs, and greater public access to South Asian art.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://southasianmi.org/; https://southasianmi.org/pages/about-us"
+  },
+  {
     "id": "audeliss",
     "name": "Audeliss",
     "tier": "Associate Partner",

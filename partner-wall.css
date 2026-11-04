@@ -219,3 +219,7 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
 
 /* Official cream by seema artwork requires a dark surface; original pixels unchanged. */
 .partner-tile[data-partner="by-seema"] .partner-logo-space,.partner-profile-logo[data-partner="by-seema"]{background:#232323}
+
+/* Official SOAR cream mark needs a dark surface; all supplied artwork remains intact. */
+.partner-tile[data-partner="south-asian-soar"] .partner-logo-space,.partner-profile-logo[data-partner="south-asian-soar"]{background:#232323}
+.partner-profile-logo[data-partner="sami"] img{max-width:100%!important;max-height:300px!important}
