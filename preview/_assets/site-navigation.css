@@ -1,0 +1,36 @@
+/* The public S.SUITE masthead, scoped to avoid affecting editorial sections. */
+body header.masthead{background:#fff!important;color:#111!important}
+body header.masthead .nav,body header.masthead .nav a,body header.masthead summary{color:#111!important}
+body header.masthead .brand img{filter:none!important}
+header.masthead{position:relative;z-index:25;height:82px;min-height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;gap:30px;background:#fff;color:#111;border-bottom:1px solid #ddd}
+header.masthead .brand{display:block;width:145px;flex-shrink:0;line-height:1;letter-spacing:normal}
+header.masthead .brand img{display:block;width:145px;height:auto;filter:none}
+header.masthead .nav{display:flex;align-items:center;gap:26px;font:400 11px/1.4 Swiss,Arial,sans-serif}
+header.masthead .nav>a{padding:15px 0;white-space:nowrap}
+header.masthead .nav>a:hover{text-decoration:underline;text-underline-offset:5px}
+header.masthead .direction-icon{width:16px;height:16px;vertical-align:middle}
+header.masthead .attendance-nav{position:relative}
+header.masthead summary{list-style:none;cursor:pointer;font:400 11px/1.5 Swiss,Arial,sans-serif;padding:13px 16px;border:1px solid #111;display:flex;align-items:center;gap:15px}
+header.masthead summary::-webkit-details-marker{display:none}
+header.masthead .attendance-menu{position:absolute;right:0;top:100%;width:280px;padding:12px 20px;background:#fff;border:1px solid #111;z-index:30}
+header.masthead .attendance-menu a{display:block;padding:15px 0}
+header.masthead .attendance-menu a+a{border-top:1px solid #ddd}
+header.masthead .attendance-menu strong{display:block;font-size:16px;font-weight:400;margin-bottom:6px}
+header.masthead .attendance-menu a>span{display:block;font-size:12px;color:#555;letter-spacing:normal}
+header.masthead .mobile-menu-toggle{display:none}
+@media(max-width:1100px){
+ header.masthead{height:72px;min-height:72px;padding:0 6%}
+ header.masthead .brand,header.masthead .brand img{width:112px}
+ header.masthead .mobile-menu-toggle{display:flex;align-items:center;gap:12px;padding:12px 0 12px 12px;min-height:44px;border:0;background:none;color:#111;margin-left:auto}
+ header.masthead .menu-label{font:10px/1.4 Swiss,Arial,sans-serif;letter-spacing:1.2px;margin:0}
+ header.masthead .menu-bars{display:flex;flex-direction:column;justify-content:center;gap:6px;width:23px;height:24px;margin:0}
+ header.masthead .menu-bars i{display:block;width:23px;height:1px;background:#111}
+ header.masthead .nav{display:none}
+ header.masthead.menu-open .nav{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:10px 6% 30px;background:#fff;max-height:calc(100dvh - 85px);overflow-y:auto;border-bottom:1px solid #111}
+ header.masthead.menu-open .nav>a{font:400 28px/1.2 Aperitif,Georgia,serif;padding:16px 0;border-bottom:1px solid #ddd}
+ header.masthead .attendance-nav{padding:16px 0}
+ header.masthead summary{font-size:18px;padding:14px 16px;min-height:48px}
+ header.masthead .attendance-menu{position:static;width:100%;border-top:0}
+ header.masthead.menu-open .menu-bars i:first-child{transform:translateY(3.5px) rotate(45deg)}
+ header.masthead.menu-open .menu-bars i:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+}
