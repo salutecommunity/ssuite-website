@@ -25,10 +25,10 @@
  .approval-page .editorial-nameplate{padding-top:24px;padding-bottom:25px}
  .approval-page .editorial-nameplate h1{font-size:clamp(58px,5.4vw,88px);line-height:1.02;margin-bottom:12px}
  .approval-page .editorial-nameplate .role{font-size:20px;line-height:1.4}
- .approval-page .epic-stage{display:flex!important;align-items:stretch;--portrait-height:clamp(390px,calc(var(--review-host-height,756px) - 244px),560px)}
- .approval-page .epic-stage figure{flex:none;width:min(50%,calc(var(--portrait-ratio,0.8) * var(--portrait-height)));height:auto!important;min-height:0!important;overflow:hidden;align-self:flex-start}
+ .approval-page .epic-stage{display:flex!important;align-items:stretch}
+ .approval-page .epic-stage figure{flex:0 0 44%;width:44%;height:auto!important;min-height:0!important;overflow:visible;align-self:flex-start}
  .approval-page .epic-stage figure img{width:100%;height:auto!important;max-height:none;object-fit:contain!important;object-position:center!important}
- .approval-page .epic-identity{flex:1;width:auto;min-width:0;padding:42px clamp(48px,6vw,120px);gap:22px;align-self:stretch;justify-content:center}
+ .approval-page .epic-identity{flex:1;width:auto;min-width:0;padding:clamp(56px,7vw,112px) clamp(40px,5vw,96px);gap:22px;align-self:stretch;justify-content:flex-start}
  .approval-page .epic-identity .epic-titlebar h2{font-size:clamp(48px,4.4vw,76px);line-height:1.08;margin-bottom:14px}
  .approval-page .epic-titlebar span{font-size:12px;letter-spacing:.12em}
  .approval-page .epic-identity>.meaning{font-size:clamp(27px,2.25vw,38px);line-height:1.35;max-width:720px;padding-top:24px}
