@@ -2,7 +2,7 @@
 body.approval-open{--editorial-width:1120px;color:#171717;background:white}
 .approval-open .masthead{height:72px;min-height:72px;padding:0 max(32px,calc((100% - var(--editorial-width))/2));}
 .approval-open .editorial-nameplate{max-width:var(--editorial-width);margin:auto;padding:52px 0 36px}
-.approval-open .epic-name h1{font:400 81px/1.06 Aperitif,Georgia,serif;letter-spacing:-.035em;margin:0 0 14px}
+.approval-open .epic-name h1{font:400 clamp(90px,6.95vw,100px)/1.06 Aperitif,Georgia,serif;letter-spacing:-.035em;margin:0 0 14px}
 .approval-open .epic-name h1 i{font-weight:400}
 .approval-open .role{font:400 17px/1.5 Swiss,Arial,sans-serif;margin:0;color:#555}
 .approval-open .epic-stage{background:#fff;color:#fff;padding:0;display:grid;grid-template-columns:50% minmax(0,1fr);gap:0;align-items:stretch;margin:0 auto;width:100%}
@@ -45,7 +45,7 @@ body.approval-open{--editorial-width:1120px;color:#171717;background:white}
 @media(max-width:700px){
  .approval-open .masthead{height:68px;min-height:68px;padding:0 24px}
  .approval-open .editorial-nameplate{margin:0;padding:44px 24px 32px}
- .approval-open .epic-name h1{font-size:51px;line-height:1.04;margin-bottom:16px}
+ .approval-open .epic-name h1{font-size:clamp(54px,15.4vw,60px);line-height:1.04;margin-bottom:16px}
  .approval-open .role{font-size:14px;line-height:1.6}
  .approval-open .epic-stage{display:block;padding:0}
  .approval-open .epic-stage figure{height:auto;aspect-ratio:auto;overflow:visible}
