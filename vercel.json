@@ -29,6 +29,11 @@
       "source": "/partners/index.html",
       "destination": "/#partners",
       "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq/",
+      "permanent": true
     }
   ]
 }
