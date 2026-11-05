@@ -2,8 +2,8 @@
 const frame=document.querySelector('.profile-frame'),canvas=document.querySelector('.preview-canvas'),stage=document.querySelector('.preview-stage'),buttons=[...document.querySelectorAll('[data-preview-mode]')];
 let mode=matchMedia('(max-width:600px)').matches?'mobile':'desktop',observer,raf;
 function fit(){
- const width=mode==='desktop'?1440:390;
  const style=getComputedStyle(stage),available=Math.max(1,stage.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight));
+ const width=mode==='desktop'?Math.max(1440,available):390;
  const scale=Math.min(1,available/width);
  frame.style.width=width+'px';
  frame.style.transform=`scale(${scale})`;
@@ -12,7 +12,7 @@ function fit(){
  if(doc?.body){const height=Math.ceil(Math.max(doc.body.scrollHeight,doc.body.getBoundingClientRect().height));frame.style.height=height+'px';canvas.style.height=Math.ceil(height*scale)+'px';}
 }
 function schedule(){cancelAnimationFrame(raf);raf=requestAnimationFrame(fit);}
-function select(next){mode=next;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.previewMode===mode)));canvas.dataset.mode=mode;fit();schedule();}
+function select(next){mode=next;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.previewMode===mode)));canvas.dataset.mode=mode;stage.dataset.mode=mode;fit();schedule();}
 buttons.forEach(b=>b.addEventListener('click',()=>select(b.dataset.previewMode)));
 frame.addEventListener('load',()=>{
  const doc=frame.contentDocument;if(!doc?.body)return;
