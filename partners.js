@@ -309,6 +309,17 @@ const ssuitePartners=[
     "description": "Founded in 2005, Ascend is a global network advancing professionals in the workplace and corporate boardrooms. Ascend strives to support and empower top talent through impactful career lifecycle and cross-industry leadership training programs, networking and mentoring opportunities, and more. We believe that by working together, our community can develop leaders who consistently ignite positive change in the workplace and the world.",
     "connection": "A Community Partner of the inaugural S.Suite Honors.",
     "source": "Partner-supplied logo and description, November 5, 2026; https://ascendleadership.org/"
+  },
+  {
+    "id": "brown-girl-angels",
+    "name": "Brown Girl Angels",
+    "tier": "Community Partner",
+    "logo": "assets/partners/brown-girl-angels-official.png",
+    "imageAlt": "Brown Girl Angels official logo",
+    "url": "https://browngirlangels.com/",
+    "description": "An angel and venture collective backing early-stage companies led by South Asian women.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://browngirlangels.com/"
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');
