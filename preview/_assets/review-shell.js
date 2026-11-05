@@ -9,7 +9,7 @@ function fit(){
  frame.style.transform=`scale(${scale})`;
  canvas.style.width=(width*scale)+'px';
  const doc=frame.contentDocument;
- if(doc?.body){const height=Math.ceil(Math.max(doc.body.scrollHeight,doc.body.getBoundingClientRect().height));frame.style.height=height+'px';canvas.style.height=Math.ceil(height*scale)+'px';}
+ if(doc?.body){doc.documentElement.style.setProperty('--review-host-height',window.innerHeight+'px');const height=Math.ceil(Math.max(doc.body.scrollHeight,doc.body.getBoundingClientRect().height));frame.style.height=height+'px';canvas.style.height=Math.ceil(height*scale)+'px';}
 }
 function schedule(){cancelAnimationFrame(raf);raf=requestAnimationFrame(fit);}
 function select(next){mode=next;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.previewMode===mode)));canvas.dataset.mode=mode;stage.dataset.mode=mode;fit();schedule();}
