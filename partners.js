@@ -68,12 +68,12 @@ const ssuitePartners=[
   },
   {
     "id": "sakhi",
-    "name": "SAKHI",
+    "name": "Sakhi",
     "tier": "Community Partner",
     "logo": "assets/partners/sakhi-provided.png",
     "imageAlt": "SAKHI — For South Asian Survivors",
     "url": "https://sakhi.org/",
-    "description": "Sakhi for South Asian Survivors represents the South Asian and Indo-Caribbean diaspora in a survivor-led movement for gender justice. The organization supports survivors of gender-based violence and provides a helpline connecting people with support.",
+    "description": "Founded in 1989, Sakhi is a nonprofit that works to eradicate gender-based violence in the South Asian and Indo-Caribbean diaspora. Led by and centering survivors, we provide trauma-informed direct services, actively push for change, and stand as a go-to resource for allies and advocates. Sakhi is a trailblazer – agile, and inclusive of all South Asians and Indo-Caribbeans regardless of how they identify. With the collective strength of survivor voices united for justice, we are shaping a world where gender-based violence has no place.",
     "connection": "A Community Partner of the inaugural S.Suite Honors.",
     "source": "https://sakhi.org/"
   },
@@ -298,6 +298,17 @@ const ssuitePartners=[
     "description": "by seema is an NYC-based wedding planning and coordination business specializing in South Asian and multicultural weddings in New York City and beyond. Its services include full planning, partial planning, and month-of coordination, with a focus on celebrations that reflect each couple’s story.",
     "connection": "A Vendor Partner of the inaugural S.Suite Honors.",
     "source": "https://www.byseema.com/"
+  },
+  {
+    "id": "ascend",
+    "name": "Ascend",
+    "tier": "Community Partner",
+    "logo": "assets/partners/ascend-provided-black.png",
+    "imageAlt": "Ascend Global Leaders official logo",
+    "url": "https://ascendleadership.org/",
+    "description": "Founded in 2005, Ascend is a global network advancing professionals in the workplace and corporate boardrooms. Ascend strives to support and empower top talent through impactful career lifecycle and cross-industry leadership training programs, networking and mentoring opportunities, and more. We believe that by working together, our community can develop leaders who consistently ignite positive change in the workplace and the world.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "Partner-supplied logo and description, November 5, 2026; https://ascendleadership.org/"
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');
