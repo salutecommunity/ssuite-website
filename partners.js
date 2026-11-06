@@ -61,9 +61,9 @@ const ssuitePartners=[
     "name": "SAYA",
     "url": "https://www.saya.org/",
     "description": "South Asian Youth Action (SAYA) is a 501(c)(3) youth development organization serving underserved New York City youth. As one of the first South Asian organizations in the United States, we offer culturally responsive programming built on three pillars (leadership, academic support, and enrichment) that fuels young people’s social and emotional growth and advances education equity.\n\nMost of our participants are first- and second-generation immigrant youth of color from diverse ethnic and religious backgrounds. They face educational disparities, limited guidance, and cultural barriers that can stand in the way of graduating high school, attending college, and finding first jobs that match their abilities. Since our founding in 1996, SAYA has supported more than 35,000 students through personalized mentorship, culturally affirming resources, and academic support beyond the classroom. SAYA's program model builds resilience, a sense of belonging, and access to opportunity. By meeting each young person’s individual needs, we help them grow academically, professionally, and personally.",
-    "source": "Organization-supplied description and complete logo, October 30, 2026; https://www.saya.org/",
+    "source": "User-supplied complete logo and description, November 6, 2026; https://www.saya.org/",
     "tier": "Community Partner",
-    "logo": "assets/partners/saya-full-white-provided.png",
+    "logo": "assets/partners/saya-full-color-provided.png",
     "connection": "A Community Partner of the inaugural S.Suite Honors.",
     "imageAlt": "SAYA — South Asian Youth Action full official logo"
   },
