@@ -25,6 +25,17 @@ const ssuitePartners=[
     "source": "https://www.tp.com/media/vzwfxxfo/logo.svg?quality=80"
   },
   {
+    "id": "ascend",
+    "name": "Ascend",
+    "tier": "Community Partner",
+    "logo": "assets/partners/ascend-provided-black.png",
+    "imageAlt": "Ascend Global Leaders official logo",
+    "url": "https://ascendleadership.org/",
+    "description": "Founded in 2005, Ascend is a global network advancing professionals in the workplace and corporate boardrooms. Ascend strives to support and empower top talent through impactful career lifecycle and cross-industry leadership training programs, networking and mentoring opportunities, and more. We believe that by working together, our community can develop leaders who consistently ignite positive change in the workplace and the world.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "Partner-supplied logo and description, November 5, 2026; https://ascendleadership.org/"
+  },
+  {
     "id": "pratham-usa",
     "name": "Pratham USA",
     "tier": "Community Partner",
@@ -299,17 +310,6 @@ const ssuitePartners=[
     "description": "by seema is an NYC-based wedding planning and coordination business specializing in South Asian and multicultural weddings in New York City and beyond. Its services include full planning, partial planning, and month-of coordination, with a focus on celebrations that reflect each couple’s story.",
     "connection": "A Vendor Partner of the inaugural S.Suite Honors.",
     "source": "https://www.byseema.com/"
-  },
-  {
-    "id": "ascend",
-    "name": "Ascend",
-    "tier": "Community Partner",
-    "logo": "assets/partners/ascend-provided-black.png",
-    "imageAlt": "Ascend Global Leaders official logo",
-    "url": "https://ascendleadership.org/",
-    "description": "Founded in 2005, Ascend is a global network advancing professionals in the workplace and corporate boardrooms. Ascend strives to support and empower top talent through impactful career lifecycle and cross-industry leadership training programs, networking and mentoring opportunities, and more. We believe that by working together, our community can develop leaders who consistently ignite positive change in the workplace and the world.",
-    "connection": "A Community Partner of the inaugural S.Suite Honors.",
-    "source": "Partner-supplied logo and description, November 5, 2026; https://ascendleadership.org/"
   },
   {
     "id": "brown-girl-angels",
