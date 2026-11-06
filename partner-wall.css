@@ -220,6 +220,10 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
 /* Official cream by seema artwork requires a dark surface; original pixels unchanged. */
 .partner-tile[data-partner="by-seema"] .partner-logo-space,.partner-profile-logo[data-partner="by-seema"]{background:#232323}
 
-/* Official SOAR cream mark needs a dark surface; all supplied artwork remains intact. */
-.partner-tile[data-partner="south-asian-soar"] .partner-logo-space,.partner-profile-logo[data-partner="south-asian-soar"]{background:#232323}
+/* Supplied SOAR artwork: original orange sampled from its opaque corner; contain intact. */
+.partner-tile[data-partner="south-asian-soar"] .partner-logo-space,.partner-profile-logo[data-partner="south-asian-soar"]{background:#d56419}
+.partner-wall .partner-tile[data-partner="south-asian-soar"] .partner-logo-space{padding:0}
+.partner-wall .partner-tile[data-partner="south-asian-soar"] .partner-logo-space img{height:100%;max-height:100%;width:auto;max-width:100%}
+.partner-profile-logo[data-partner="south-asian-soar"]{height:160px;padding:0}
+.partner-profile-logo[data-partner="south-asian-soar"] img{height:160px!important;max-height:160px!important;max-width:100%!important}
 .partner-profile-logo[data-partner="sami"] img{max-width:100%!important;max-height:300px!important}

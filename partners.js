@@ -211,7 +211,7 @@ const ssuitePartners=[
     "id": "south-asian-soar",
     "name": "South Asian SOAR",
     "tier": "Community Partner",
-    "logo": "assets/partners/south-asian-soar-official.webp",
+    "logo": "assets/partners/soar-cream-orange-provided.png",
     "imageAlt": "South Asian SOAR official logo",
     "url": "https://www.southasiansoar.org/",
     "description": "South Asian SOAR brings together survivors, advocates, organizations, and allies to end gender-based violence in the South Asian diaspora. Its work includes training and resources for direct-service organizations, community education and storytelling, research, and advocacy.",
