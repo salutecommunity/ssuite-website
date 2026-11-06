@@ -129,7 +129,7 @@ main .associate-name-group .associate-recognition-label{font-family:inherit;font
 .associate-name-group .supporter-name-wall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 24px;align-items:center;text-align:center}
 main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,serif;font-size:clamp(24px,2.45vw,33px)!important;line-height:1.25!important;font-weight:400;letter-spacing:-.015em;margin:0;color:#27251f}
 /* The authentic white SAYA lockup needs its own brand-purple surface. */
-.partner-tile[data-partner="saya"] .partner-logo-space,.partner-profile-logo[data-partner="saya"]{background:#56307c}
+.partner-tile[data-partner="saya"] .partner-logo-space,.partner-profile-logo[data-partner="saya"]{background:#7bb5b2}
 .partner-tile[data-partner="saya"] .partner-logo-space{padding:22px 16px}
 .partner-tile[data-partner="saya"] .partner-logo-space img{max-width:100%;max-height:125px}
 .partner-profile-logo[data-partner="saya"] img{max-width:100%!important;max-height:180px!important}
