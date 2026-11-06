@@ -321,6 +321,28 @@ const ssuitePartners=[
     "description": "An angel and venture collective backing early-stage companies led by South Asian women.",
     "connection": "A Community Partner of the inaugural S.Suite Honors.",
     "source": "https://browngirlangels.com/"
+  },
+  {
+    "id": "inner-glow-vitamins",
+    "name": "Inner Glow Vitamins",
+    "tier": "Community Partner",
+    "logo": "assets/partners/inner-glow-official.png",
+    "imageAlt": "Inner Glow Vitamins official logo",
+    "url": "https://innerglowvitamins.com/",
+    "description": "Nutraceuticals that nourish your skin from within.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://innerglowvitamins.com/"
+  },
+  {
+    "id": "misshri",
+    "name": "Misshri",
+    "tier": "Community Partner",
+    "logo": "assets/partners/misshri-official.png",
+    "imageAlt": "Misshri official logo",
+    "url": "https://www.misshri.com/",
+    "description": "Sweets & after-meal bites.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://www.misshri.com/"
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');

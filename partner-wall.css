@@ -227,3 +227,7 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
 .partner-profile-logo[data-partner="south-asian-soar"]{height:160px;padding:0}
 .partner-profile-logo[data-partner="south-asian-soar"] img{height:160px!important;max-height:160px!important;max-width:100%!important}
 .partner-profile-logo[data-partner="sami"] img{max-width:100%!important;max-height:300px!important}
+
+/* Official white Misshri artwork uses the existing charcoal logo surface, unchanged. */
+.partner-tile[data-partner="misshri"] .partner-logo-space,.partner-profile-logo[data-partner="misshri"]{background:#232323}
+.partner-profile-logo[data-partner="misshri"] img{max-height:180px!important}
