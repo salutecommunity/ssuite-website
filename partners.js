@@ -351,15 +351,36 @@ const ssuitePartners=[
     "logo": "assets/partners/3d-printing-decor-provided.jpeg",
     "imageAlt": "3D Printing & Decor vendor partner",
     "logoOnly": true
+  },
+  {
+    "id": "milna",
+    "name": "Milna",
+    "tier": "Community Partner",
+    "logo": "assets/partners/milna-provided.png",
+    "imageAlt": "Milna supplied logo",
+    "description": "Milna creates spaces for people to come together, hold hands and discover stories beyond everyday roles and achievements. It began with Aarti Jadeja’s simple belief that meaningful connections begin with conversations, and that sometimes, all it takes is a shared experience, an encouraging word or a gentle nudge to pursue a dream. Many of Milna’s gatherings also carry a spirit of giving back.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "User-supplied logo and exact description, November 7, 2026; no verified official website supplied."
+  },
+  {
+    "id": "brown-girl-magazine",
+    "name": "Brown Girl Magazine",
+    "tier": "Community Partner",
+    "logo": "assets/partners/brown-girl-magazine-official.png",
+    "imageAlt": "Brown Girl Magazine, Established 2008",
+    "url": "https://browngirlmagazine.com/",
+    "description": "Born out of the lack of minority representation in mainstream media, Brown Girl Magazine was created by and for South Asian womxn, who believe in the power of storytelling as a vehicle for community building and empowerment.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "https://browngirlmagazine.com/about-us/; official homepage masthead logo https://browngirlmagazine.com/wp-content/themes/brown-girl-mag/img/logo-bgm-circle-white.png"
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');
 partnerWall.classList.add('partner-wall');
 partnerWall.setAttribute('aria-label','S.Suite partners — select a logo to learn more');
-partnerWall.innerHTML=['Executive Partner','Associate Partner','Community Partner','Vendor Partner'].map(tier=>`<section class="partner-tier ${tier==='Executive Partner'?'partner-tier-executive':tier==='Associate Partner'?'partner-tier-associate':tier==='Community Partner'?'partner-tier-community':'partner-tier-vendor'}" aria-label="${tier}s"><header class="partner-tier-heading"><h3>${tier}s</h3></header><div class="partner-tier-logos">${ssuitePartners.filter(p=>p.tier===tier).map(p=>p.logoOnly?`<div class="partner-tile" data-partner="${p.id}"><span class="partner-logo-space"><img src="${p.logo}" alt="${p.imageAlt}" loading="lazy"></span></div>`:`<button type="button" class="partner-tile" data-partner="${p.id}" aria-label="Learn more about ${p.name}, ${p.tier}" aria-haspopup="dialog"><span class="partner-logo-space">${p.logo?`<img src="${p.logo}" alt="${p.imageAlt||`${p.name} logo`}" loading="lazy">`:'<span class="partner-name-treatment">NIVEDHA M.<br>PHOTOGRAPHY</span>'}</span><span class="partner-card-footer"><span>${p.name}</span><span aria-hidden="true">↗</span></span></button>`).join('')}${tier==='Associate Partner'?'<section class="associate-name-group" aria-label="Individual Associate Partners"><p class="associate-recognition-label">Individual Associate Partners</p><div class="supporter-name-wall"><p>Jaime Patel</p><p>Manisha Bharti</p><p>Megha Desai</p><p>Nandita Bakhshi</p><p>Sri Murthy</p><p>Jyothi Rao</p><p>Rebecca Parekh</p><p>Arya Kurien</p></div></section>':''}</div></section>`).join('');
+partnerWall.innerHTML=['Executive Partner','Associate Partner','Community Partner','Vendor Partner'].map(tier=>`<section class="partner-tier ${tier==='Executive Partner'?'partner-tier-executive':tier==='Associate Partner'?'partner-tier-associate':tier==='Community Partner'?'partner-tier-community':'partner-tier-vendor'}" aria-label="${tier}s"><header class="partner-tier-heading"><h3>${tier}s</h3></header><div class="partner-tier-logos">${ssuitePartners.filter(p=>p.tier===tier).map(p=>p.logoOnly?`<div class="partner-tile" data-partner="${p.id}"><span class="partner-logo-space"><img src="${p.logo}" alt="${p.imageAlt}" loading="lazy"></span></div>`:`<button type="button" class="partner-tile" data-partner="${p.id}" aria-label="Learn more about ${p.name}, ${p.tier}" aria-haspopup="dialog"><span class="partner-logo-space">${p.logo?`<img src="${p.logo}" alt="${p.imageAlt||`${p.name} logo`}" loading="lazy">`:'<span class="partner-name-treatment">NIVEDHA M.<br>PHOTOGRAPHY</span>'}</span><span class="partner-card-footer"><span>${p.name}</span><span aria-hidden="true">↗</span></span></button>`).join('')}${tier==='Associate Partner'?'<section class="associate-name-group" aria-label="Individual Associate Partners"><p class="associate-recognition-label">Individual Associate Partners</p><div class="supporter-name-wall"><p>Jaime Patel</p><p>Manisha Bharti</p><p>Megha Desai</p><p>Nandita Bakhshi</p><p>Sri Murthy</p><p>Jyothi Rao</p><p>Rebecca Parekh</p><p>Arya Kurien</p><p>Gitanjali Faleiro</p></div></section>':''}</div></section>`).join('');
 partnerWall.querySelectorAll('button').forEach(button=>button.addEventListener('click',()=>{
  const p=ssuitePartners.find(partner=>partner.id===button.dataset.partner);
- openModal(`<div class="partner-profile-body"><div class="partner-profile-logo" data-partner="${p.id}">${p.logo?`<img src="${p.logo}" alt="${p.imageAlt||`${p.name} logo`}">`:'<span class="partner-name-treatment">NIVEDHA M.<br>PHOTOGRAPHY</span>'}</div><p class="eyebrow">${p.tier}</p><h2 id="modal-title">${p.name}</h2>${p.description.split(/\n\n/).map(paragraph=>`<p>${paragraph}</p>`).join('')}<div class="partner-profile-role"><strong>WITH S.SUITE</strong><p>${p.connection}</p></div><a class="textlink" href="${p.url}" target="_blank" rel="noopener noreferrer">Visit ${p.name} ↗</a></div>`);
+ openModal(`<div class="partner-profile-body"><div class="partner-profile-logo" data-partner="${p.id}">${p.logo?`<img src="${p.logo}" alt="${p.imageAlt||`${p.name} logo`}">`:'<span class="partner-name-treatment">NIVEDHA M.<br>PHOTOGRAPHY</span>'}</div><p class="eyebrow">${p.tier}</p><h2 id="modal-title">${p.name}</h2>${p.description.split(/\n\n/).map(paragraph=>`<p>${paragraph}</p>`).join('')}<div class="partner-profile-role"><strong>WITH S.SUITE</strong><p>${p.connection}</p></div>${p.url?`<a class="textlink" href="${p.url}" target="_blank" rel="noopener noreferrer">Visit ${p.name} ↗</a>`:""}</div>`);
 }));
 
 // A distinct, consistently spaced invitation after the partner recognition wall.
