@@ -3,8 +3,9 @@
 document.querySelector('.hero-copy>p').innerHTML='Honoring South Asian<br>women <em>and allies.</em>';
 document.querySelector('.hero-discover').innerHTML='THE CATEGORIES <span>↘</span>';
 document.querySelector('.hero-footnote span:last-child').textContent='THE INAUGURAL HONORS';
-document.querySelector('.hero-event .btn').innerHTML='Tickets <span>↗</span>';
-document.querySelector('.host-table-link').textContent='Tables ↗';
+document.querySelector('.hero-event').insertAdjacentHTML('afterbegin','<p class="registration-closed-notice">Registration is now closed. For inquiries, please email <a href="mailto:ssuite@salute.community">ssuite@salute.community</a>.</p>');
+document.querySelector('.hero-event .btn').innerHTML='Email us <span>↗</span>';
+document.querySelector('.host-table-link').textContent='Tables information ↗';
 document.querySelector('.home-categories .eyebrow').textContent='THE CATEGORIES';
 document.querySelector('.category-intro').textContent='Recognizing South Asian women across industries, alongside the allies who champion their advancement.';
 document.querySelector('.home-categories .textlink').textContent='View category details ↗';

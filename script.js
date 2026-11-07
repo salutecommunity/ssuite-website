@@ -50,8 +50,8 @@ addEventListener('hashchange',routeView);routeView();
 function preserveAcronyms(){document.querySelectorAll('.teaser-grid .serif,.category-choice>span:first-child,.category-detail h3').forEach(e=>{if(e.textContent==='Ceo')e.textContent='CEO';if(e.textContent==='The chair')e.textContent='The Chair'})}
 preserveAcronyms();new MutationObserver(preserveAcronyms).observe(categoryDetail,{childList:true});
 // Attendance links deliberately use the verified, existing live event subpages.
-document.querySelectorAll('button[data-preview="attend"]').forEach(b=>{const link=document.createElement('a');link.className=b.className;link.innerHTML=b.innerHTML;link.href='https://event.ssuite.org/#attend';link.target='_blank';link.rel='noopener noreferrer';link.title='Tickets for S.Suite';b.replaceWith(link)});
-document.querySelector('.hero-event').insertAdjacentHTML('beforeend','<a class="host-table-link" href="https://event.ssuite.org/tables/" target="_blank" rel="noopener noreferrer">Or host a table ↗</a>');
-document.querySelector('#evening .intro').insertAdjacentHTML('beforeend','<a class="evening-table-link textlink" href="https://event.ssuite.org/tables/" target="_blank" rel="noopener noreferrer">Host a table ↗</a>');
+document.querySelectorAll('button[data-preview="attend"]').forEach(b=>{const link=document.createElement('a');link.className=b.className;link.innerHTML=b.innerHTML;link.href='mailto:ssuite@salute.community';link.title='Registration closed — email ssuite@salute.community';b.replaceWith(link)});
+document.querySelector('.hero-event').insertAdjacentHTML('beforeend','<a class="host-table-link" href="https://event.ssuite.org/tables/" target="_blank" rel="noopener noreferrer">Tables information ↗</a>');
+document.querySelector('#evening .intro').insertAdjacentHTML('beforeend','<a class="evening-table-link textlink" href="https://event.ssuite.org/tables/" target="_blank" rel="noopener noreferrer">Tables information ↗</a>');
 document.addEventListener('click',e=>{const menu=document.querySelector('.attendance-nav');if(!menu.contains(e.target))menu.open=false});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelector('.attendance-nav').open=false});

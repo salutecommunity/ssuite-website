@@ -8,7 +8,7 @@ night.innerHTML=`
    <p class="eyebrow">SALUTE PRESENTS · THE INAUGURAL HONORS</p>
    <h2>The <em>Evening.</em></h2>
    <p class="night-lede">Join us to honor South Asian women leaders and allies—and connect with the community behind them.</p>
-   <div class="night-actions"><a class="btn" href="https://event.ssuite.org/#attend" target="_blank" rel="noopener noreferrer">Tickets <span>↗</span></a><a class="night-text-link" href="https://event.ssuite.org/tables/" target="_blank" rel="noopener noreferrer">Host a table <span>↗</span></a></div>
+   <p class="registration-closed-notice">Registration is now closed. For inquiries, please email <a href="mailto:ssuite@salute.community">ssuite@salute.community</a>.</p><div class="night-actions"><a class="btn" href="mailto:ssuite@salute.community">Email us <span>↗</span></a><a class="night-text-link" href="https://event.ssuite.org/tables/" target="_blank" rel="noopener noreferrer">Tables information <span>↗</span></a></div>
   </div>
   <div class="night-facts">
    <div><span>WHEN</span><p>Friday, November 20, 2026</p></div>
@@ -34,7 +34,7 @@ night.innerHTML=`
  </section>
  <section class="night-attend" aria-labelledby="night-attend-title">
   <div class="night-attend-heading"><p class="eyebrow">NOVEMBER 20 · NEW YORK CITY</p><h3 id="night-attend-title">Be part of<br><em>the evening.</em></h3><p>South Asian women, allies, and guests who share SALUTE’s mission are welcome.</p></div>
-  <div class="night-attend-options"><article><span>01 / TICKETS</span><h4>Join us.</h4><p>Explore individual and member attendance options.</p><a href="https://event.ssuite.org/#attend" target="_blank" rel="noopener noreferrer">View tickets <span>↗</span></a></article><article><span>02 / TABLES</span><h4>Bring your community.</h4><p>Host colleagues, clients, mentors, or friends.</p><a href="https://event.ssuite.org/tables/" target="_blank" rel="noopener noreferrer">Explore tables <span>↗</span></a></article></div>
+  <div class="night-attend-options"><article><span>01 / TICKETS</span><h4>Registration is now closed.</h4><p>For inquiries, please email ssuite@salute.community.</p><a href="mailto:ssuite@salute.community">Email ssuite@salute.community <span>↗</span></a></article><article><span>02 / TABLES</span><h4>Bring your community.</h4><p>Host colleagues, clients, mentors, or friends.</p><a href="https://event.ssuite.org/tables/" target="_blank" rel="noopener noreferrer">Tables information <span>↗</span></a></article></div>
  </section>`;
 
 // Lead with the experience and its purpose, not a portrait-led event poster.
