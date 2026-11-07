@@ -231,3 +231,8 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
 /* Official white Misshri artwork uses the existing charcoal logo surface, unchanged. */
 .partner-tile[data-partner="misshri"] .partner-logo-space,.partner-profile-logo[data-partner="misshri"]{background:#232323}
 .partner-profile-logo[data-partner="misshri"] img{max-height:180px!important}
+
+/* Full supplied square artwork; logo-only vendor recognition. */
+.partner-tile[data-partner="3d-printing-decor"] .partner-logo-space{padding:0}
+.partner-tile[data-partner="3d-printing-decor"] .partner-logo-space img{max-width:100%;max-height:160px;object-fit:contain}
+.partner-wall .partner-tile[data-partner="3d-printing-decor"]:hover{background:#f5f5f3;transform:none}
