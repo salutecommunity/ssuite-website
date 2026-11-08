@@ -372,6 +372,39 @@ const ssuitePartners=[
     "description": "Born out of the lack of minority representation in mainstream media, Brown Girl Magazine was created by and for South Asian womxn, who believe in the power of storytelling as a vehicle for community building and empowerment.",
     "connection": "A Community Partner of the inaugural S.Suite Honors.",
     "source": "https://browngirlmagazine.com/about-us/; official homepage masthead logo https://browngirlmagazine.com/wp-content/themes/brown-girl-mag/img/logo-bgm-circle-white.png"
+  },
+  {
+    "id": "jhula",
+    "name": "Jhula",
+    "logo": "assets/partners/jhula-provided.png",
+    "imageAlt": "Jhula supplied full logo",
+    "url": "https://www.myjhula.com/",
+    "description": "The truth is: most moms report feeling burned out by motherhood, especially in the early years, when it’s harder to prioritize yourself amidst the juggle of it all. At Jhula our mission is to support moms with thoughtfully designed clothing to carry them through all seasons of motherhood.",
+    "source": "User-supplied logo and exact description, November 7, 2026; https://www.myjhula.com/pages/about",
+    "tier": "Community Partner",
+    "connection": "A Community Partner of the inaugural S.Suite Honors."
+  },
+  {
+    "id": "house-of-riva",
+    "name": "House of RIVA",
+    "logo": "assets/partners/house-of-riva-official.png",
+    "imageAlt": "House of RIVA official logo",
+    "url": "https://houseofrivajewelry.com/",
+    "description": "Custom engagement rings and fine jewelry pieces designed around your vision, not a retailer's inventory.",
+    "source": "Official homepage opening description and original header logo: https://houseofrivajewelry.com/",
+    "tier": "Community Partner",
+    "connection": "A Community Partner of the inaugural S.Suite Honors."
+  },
+  {
+    "id": "viani",
+    "name": "VIANI",
+    "logo": "assets/partners/viani-official.png",
+    "imageAlt": "VIANI official full wordmark and star logo",
+    "url": "https://www.vianiwatches.com/",
+    "description": "VIANI is an independent and South Asian owned watch company proudly celebrating the history of the Hindi Numeral System",
+    "source": "Official homepage title, meta description and original logo: https://www.vianiwatches.com/",
+    "tier": "Community Partner",
+    "connection": "A Community Partner of the inaugural S.Suite Honors."
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');
