@@ -248,3 +248,7 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
 .partner-wall .partner-tile[data-partner="modern-wine"] .partner-logo-space{padding:0}
 .partner-wall .partner-tile[data-partner="modern-wine"] .partner-logo-space img{height:100%;max-height:100%;width:auto;max-width:100%}
 .partner-profile-logo[data-partner="modern-wine"] img{max-height:260px!important}
+
+/* RIVA official source is 170×64: half-size rendering prevents enlargement on 2× screens. */
+.partner-wall .partner-tile[data-partner="house-of-riva"] .partner-logo-space img,
+.partner-profile-logo[data-partner="house-of-riva"] img{width:85px!important;max-width:100%!important;height:auto!important;max-height:none!important;object-fit:contain}

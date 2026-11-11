@@ -413,7 +413,7 @@ const ssuitePartners=[
     "logo": "assets/partners/illumine-provided.png",
     "imageAlt": "illumine.earth supplied full logo",
     "url": "https://www.illumine.earth/",
-    "description": "Senior expert advisory and coaching, and a confidential network of trusted peers, for corporate sustainability and impact leaders.",
+    "description": "Founded by Karimah Hudda, illumine.earth provides senior expert advisory and coaching, and a confidential network of trusted peers, for corporate sustainability and impact leaders.",
     "connection": "A Community Partner of the inaugural S.Suite Honors.",
     "source": "Logo extracted intact from supplied SALUTE-auction-Karimah-Hudda.pdf; description from https://www.illumine.earth/"
   },
