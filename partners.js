@@ -405,6 +405,28 @@ const ssuitePartners=[
     "source": "Official homepage title, meta description and original logo: https://www.vianiwatches.com/",
     "tier": "Community Partner",
     "connection": "A Community Partner of the inaugural S.Suite Honors."
+  },
+  {
+    "id": "illumine-earth",
+    "name": "illumine.earth",
+    "tier": "Community Partner",
+    "logo": "assets/partners/illumine-provided.png",
+    "imageAlt": "illumine.earth supplied full logo",
+    "url": "https://www.illumine.earth/",
+    "description": "Senior expert advisory and coaching, and a confidential network of trusted peers, for corporate sustainability and impact leaders.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "Logo extracted intact from supplied SALUTE-auction-Karimah-Hudda.pdf; description from https://www.illumine.earth/"
+  },
+  {
+    "id": "modern-wine",
+    "name": "Modern Wine",
+    "tier": "Community Partner",
+    "logo": "assets/partners/modern-wine-provided.png",
+    "imageAlt": "Modern Wine supplied full bottle and wordmark logo",
+    "url": "https://modernwine.com/",
+    "description": "At Modern Wine, our mission is to dramatically simplify the world of wine. Our unique in-store experience and knowledgeable staff help cut through the complexities of the wine world, making it easier for everyone to find the wine & spirits they love.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "Logo supplied by Seema Gunda via email; official About Us copy https://modernwine.com/"
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');

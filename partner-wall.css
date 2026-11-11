@@ -243,3 +243,8 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
 .partner-profile-logo[data-partner="milna"] img{max-height:220px!important}
 .partner-tile[data-partner="brown-girl-magazine"] .partner-logo-space,.partner-profile-logo[data-partner="brown-girl-magazine"]{background:#232323}
 .partner-profile-logo[data-partner="brown-girl-magazine"] img{max-height:180px!important}
+
+/* Preserve the complete tall supplied Modern Wine artwork at readable scale. */
+.partner-wall .partner-tile[data-partner="modern-wine"] .partner-logo-space{padding:0}
+.partner-wall .partner-tile[data-partner="modern-wine"] .partner-logo-space img{height:100%;max-height:100%;width:auto;max-width:100%}
+.partner-profile-logo[data-partner="modern-wine"] img{max-height:260px!important}
