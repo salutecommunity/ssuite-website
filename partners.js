@@ -427,6 +427,17 @@ const ssuitePartners=[
     "description": "At Modern Wine, our mission is to dramatically simplify the world of wine. Our unique in-store experience and knowledgeable staff help cut through the complexities of the wine world, making it easier for everyone to find the wine & spirits they love.",
     "connection": "A Community Partner of the inaugural S.Suite Honors.",
     "source": "Logo supplied by Seema Gunda via email; official About Us copy https://modernwine.com/"
+  },
+  {
+    "id": "indiaspora",
+    "name": "Indiaspora",
+    "tier": "Community Partner",
+    "logo": "assets/partners/indiaspora-provided.png",
+    "imageAlt": "Indiaspora supplied full logo",
+    "url": "https://indiaspora.org/",
+    "description": "Indiaspora is a global nonprofit network of Indian-origin leaders. Since 2012, Indiaspora has created a curated community of leaders across business, policy, philanthropy, science, and the arts. From coordinating disaster relief to shaping policy conversations to building the next generation of changemakers, we exist to help the diaspora act as a force for good, wherever in the world it calls home. Indiaspora’s platform brings the global Indian diaspora together to turn shared success into shared purpose.",
+    "connection": "A Community Partner of the inaugural S.Suite Honors.",
+    "source": "Logo and exact description supplied by Neha; official destination verified https://indiaspora.org/"
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');
