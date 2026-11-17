@@ -257,3 +257,9 @@ main .associate-name-group .supporter-name-wall p{font-family:Aperitif,Georgia,s
 .partner-wall .partner-tile[data-partner="indiaspora"] .partner-logo-space{padding:0}
 .partner-wall .partner-tile[data-partner="indiaspora"] .partner-logo-space img{height:100%;max-height:100%;width:auto;max-width:100%}
 .partner-profile-logo[data-partner="indiaspora"] img{max-height:260px!important}
+
+/* Preserve the complete supplied Pak Futures Foundation square, including its navy margins. */
+.partner-wall .partner-tile[data-partner="pak-futures-foundation"] .partner-logo-space{padding:0;background:#010243;height:160px}
+.partner-wall .partner-tile[data-partner="pak-futures-foundation"] .partner-logo-space img{height:auto;max-height:160px;width:160px;max-width:100%;object-fit:contain}
+.partner-profile-logo[data-partner="pak-futures-foundation"]{background:#010243}
+.partner-profile-logo[data-partner="pak-futures-foundation"] img{max-height:260px!important}

@@ -438,6 +438,39 @@ const ssuitePartners=[
     "description": "Indiaspora is a global nonprofit network of Indian-origin leaders. Since 2012, Indiaspora has created a curated community of leaders across business, policy, philanthropy, science, and the arts. From coordinating disaster relief to shaping policy conversations to building the next generation of changemakers, we exist to help the diaspora act as a force for good, wherever in the world it calls home. Indiaspora’s platform brings the global Indian diaspora together to turn shared success into shared purpose.",
     "connection": "A Community Partner of the inaugural S.Suite Honors.",
     "source": "Logo and exact description supplied by Neha; official destination verified https://indiaspora.org/"
+  },
+  {
+    "id": "commit2change",
+    "name": "Commit2Change",
+    "logo": "assets/partners/commit2change-provided.png",
+    "url": "https://www.commit2change.org/",
+    "description": "Commit2Change (aka C2C) is a nonprofit dedicated to educating and empowering girls across South Asia. Since 2010, we have reached more than 12,000 girls in India, Nepal and Bangladesh, and we are on track for 15,000 by 2028!\n\nWe partner with orphanages and schools who serve extremely impoverished girls, and we stay with each girl across her whole journey, from education to opportunity. Our ‘4Cs’ curriculum moves her from Access to Elevation to Agency: first we provide the tools and resources to go to school then we build the confidence and critical thinking to excel and finally we provide the skills and support to turn that into a real future.\n\nWe start with the simple belief: when a girl succeeds, she lifts her community and her society with her.",
+    "source": "Sumana Setty email November 16 2026: supplied exact three-paragraph description and attached C2C_TWOTONE_1 (2) (5) (1).png; official site verified.",
+    "tier": "Community Partner",
+    "imageAlt": "Commit2Change full logo",
+    "connection": "A Community Partner of the inaugural S.Suite Honors."
+  },
+  {
+    "id": "culinary-care",
+    "name": "Culinary Care",
+    "logo": "assets/partners/culinary-care-official.webp",
+    "url": "https://culinarycare.org/",
+    "description": "Free meals from local restaurants and people who care come together to make cancer treatment feel a little less lonely.",
+    "source": "Community Partner classification in Neha email October 31 2026. Official Culinary Care homepage exact description and complete logo (Logo Black-Blue Tagline), retrieved November 17 2026. Founder Courtney Johnson verified at culinarycare.org/speaking.",
+    "tier": "Community Partner",
+    "imageAlt": "Culinary Care full logo",
+    "connection": "A Community Partner of the inaugural S.Suite Honors."
+  },
+  {
+    "id": "pak-futures-foundation",
+    "name": "Pak Futures Foundation",
+    "logo": "assets/partners/pak-futures-provided.jpeg",
+    "url": "https://pakfuturesfoundation.org/",
+    "description": "Pak Futures Foundation is a 501(c)(3) nonprofit advancing the leadership, scholarship, and creative voice of the Pakistani-American community.",
+    "source": "Logo supplied by Neha November 17 2026. Exact first About sentence from official pakfuturesfoundation.org homepage.",
+    "tier": "Community Partner",
+    "imageAlt": "Pak Futures Foundation full logo",
+    "connection": "A Community Partner of the inaugural S.Suite Honors."
   }
 ];
 const partnerWall=partnerPage.querySelector('.sponsor-recognition');
