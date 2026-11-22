@@ -10,7 +10,6 @@ document.querySelector('.home-categories .eyebrow').textContent='THE CATEGORIES'
 document.querySelector('.category-intro').textContent='Recognizing South Asian women across industries, alongside the allies who champion their advancement.';
 document.querySelector('.home-categories .textlink').textContent='View category details ↗';
 document.querySelector('#honorees .sectionhead h2').innerHTML='The inaugural<br><em>honorees.</em>';
-document.querySelector('.honoree-copy .lede').textContent='SALUTE’s lifetime achievement honor recognizes Indra Nooyi’s leadership and the example she has set for generations of women.';
 document.querySelector('.home-intro').insertAdjacentHTML('beforeend',`<section class="home-suite-introduction" aria-labelledby="home-suite-title"><div><p class="eyebrow">THE S.SUITE HONORS</p><h2 id="home-suite-title">Making leadership visible.</h2></div><div class="home-suite-introduction-copy"><p class="home-suite-definition">An honors ceremony recognizing South Asian women leaders and allies across business, capital, &amp; culture.</p><p>Created by SALUTE, S.Suite spotlights the leaders shaping our world—and the future we’re investing in. Each S.Suite Class comes together to champion a shared community initiative that expands access, visibility, and connection.</p><p>Alongside the honors, The S.Suite Lists spotlight standout leaders across the categories—bringing more of our community’s talent and influence into view.</p></div></section>`);
 
 const platform=document.querySelector('#about');
