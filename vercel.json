@@ -34,6 +34,21 @@
       "source": "/faq",
       "destination": "/faq/",
       "permanent": true
+    },
+    {
+      "source": "/ambassadors",
+      "destination": "https://salute.community/",
+      "permanent": true
+    },
+    {
+      "source": "/ambassadors/",
+      "destination": "https://salute.community/",
+      "permanent": true
+    },
+    {
+      "source": "/ambassadors/index.html",
+      "destination": "https://salute.community/",
+      "permanent": true
     }
   ]
 }

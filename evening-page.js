@@ -8,7 +8,7 @@ night.innerHTML=`
    <p class="eyebrow">SALUTE PRESENTS · THE INAUGURAL HONORS</p>
    <h2>The <em>Evening.</em></h2>
    <p class="night-lede">Join us to honor South Asian women leaders and allies—and connect with the community behind them.</p>
-   <p class="registration-closed-notice">Registration is now closed. For inquiries, please email <a href="mailto:ssuite@salute.community">ssuite@salute.community</a>.</p><div class="night-actions"><a class="btn" href="mailto:ssuite@salute.community">Email us <span>↗</span></a><a class="night-text-link" href="https://event.ssuite.org/tables/" target="_blank" rel="noopener noreferrer">Tables information <span>↗</span></a></div>
+   <div class="night-actions"><a class="btn" href="https://salute.community/">Learn More About SALUTE <span>↗</span></a></div>
   </div>
   <div class="night-facts">
    <div><span>WHEN</span><p>Friday, November 20, 2026</p></div>
@@ -33,8 +33,8 @@ night.innerHTML=`
   </div>
  </section>
  <section class="night-attend" aria-labelledby="night-attend-title">
-  <div class="night-attend-heading"><p class="eyebrow">NOVEMBER 20 · NEW YORK CITY</p><h3 id="night-attend-title">Be part of<br><em>the evening.</em></h3><p>South Asian women, allies, and guests who share SALUTE’s mission are welcome.</p></div>
-  <div class="night-attend-options"><article><span>01 / TICKETS</span><h4>Registration is now closed.</h4><p>For inquiries, please email ssuite@salute.community.</p><a href="mailto:ssuite@salute.community">Email ssuite@salute.community <span>↗</span></a></article><article><span>02 / TABLES</span><h4>Bring your community.</h4><p>Host colleagues, clients, mentors, or friends.</p><a href="https://event.ssuite.org/tables/" target="_blank" rel="noopener noreferrer">Tables information <span>↗</span></a></article></div>
+  <div class="night-attend-heading"><p class="eyebrow">BEYOND THE EVENING</p><h3 id="night-attend-title">The SALUTE<br><em>community.</em></h3></div>
+  <div class="night-actions"><a class="btn" href="https://salute.community/">Learn More About SALUTE <span>↗</span></a></div>
  </section>`;
 
 // Lead with the experience and its purpose, not a portrait-led event poster.
@@ -58,11 +58,6 @@ approach.className='night-approach';
 approach.setAttribute('aria-labelledby','night-approach-title');
 approach.innerHTML='<div><p class="eyebrow">OUR APPROACH</p><h3 id="night-approach-title">Connection is part<br>of the program.</h3></div><div><p>S.Suite brings together South Asian women leaders, allies, and people invested in their advancement. We’re approaching the evening with the same care SALUTE brings to its year-round gatherings: who is in the room, how people meet, and what those relationships can make possible.</p><p>The receptions create space to connect across tables and industries. The dinner offers a shared moment of recognition and conversation. S.Suite Ambassadors help bring those parts together.</p></div>';
 flow.before(approach);
-const ambassadors=document.createElement('section');
-ambassadors.className='night-ambassadors';
-ambassadors.setAttribute('aria-labelledby','night-ambassadors-title');
-ambassadors.innerHTML=`<div class="night-ambassador-intro"><p class="eyebrow">PEOPLE WHO HELP BRING THE ROOM TOGETHER</p><h3 id="night-ambassadors-title">S.Suite<br><em>Ambassadors.</em></h3><p>A select group helping shape the guest experience before and during the evening.</p></div><div class="night-ambassador-detail"><article><span class="night-small-label">BEFORE THE EVENING</span><h4>A connection in advance.</h4><p>Ambassadors will be connected with a small group of attendees ahead of S.Suite, creating a point of connection before guests arrive.</p></article><article><span class="night-small-label">DURING THE RECEPTIONS</span><h4>A liaison in the room.</h4><p>During cocktails and dessert, Ambassadors welcome guests, make thoughtful introductions, and help connect people beyond their existing circles.</p></article><div class="night-ambassador-interest"><p>Interested in playing an active role while building new relationships of your own?</p><a class="textlink" href="https://event.ssuite.org/ambassadors" target="_blank" rel="noopener noreferrer">Explore the Ambassador opportunity ↗</a><small>Interest does not confirm selection. Selected Ambassadors still need to purchase a ticket; the role does not include complimentary admission.</small></div></div>`;
-conversation.before(ambassadors);
 
 // Keep the featured conversation inside its agenda chapter, not a second large section.
 const recognition=flow.querySelector('.night-agenda>article:nth-child(2)');

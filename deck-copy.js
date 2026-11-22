@@ -3,9 +3,6 @@
 document.querySelector('.hero-copy>p').innerHTML='Honoring South Asian<br>women <em>and allies.</em>';
 document.querySelector('.hero-discover').innerHTML='THE CATEGORIES <span>↘</span>';
 document.querySelector('.hero-footnote span:last-child').textContent='THE INAUGURAL HONORS';
-document.querySelector('.hero-event').insertAdjacentHTML('afterbegin','<p class="registration-closed-notice">Registration is now closed. For inquiries, please email <a href="mailto:ssuite@salute.community">ssuite@salute.community</a>.</p>');
-document.querySelector('.hero-event .btn').innerHTML='Email us <span>↗</span>';
-document.querySelector('.host-table-link').textContent='Tables information ↗';
 document.querySelector('.home-categories .eyebrow').textContent='THE CATEGORIES';
 document.querySelector('.category-intro').textContent='Recognizing South Asian women across industries, alongside the allies who champion their advancement.';
 document.querySelector('.home-categories .textlink').textContent='View category details ↗';
@@ -51,6 +48,5 @@ paths[0].querySelectorAll('p:not(.eyebrow)')[1].textContent='Partnerships can ex
 paths[1].querySelector('h3').textContent='Connect our communities.';
 paths[1].querySelectorAll('p:not(.eyebrow)')[0].textContent='We welcome complementary organizations that share our commitment to leadership and opportunity. Together, we can introduce new perspectives and build relationships across communities.';
 paths[1].querySelectorAll('p:not(.eyebrow)')[1].textContent='Guests do not need to be South Asian women. Allies and others who share the mission are welcome.';
-sponsors.querySelector('.sponsor-host .eyebrow').textContent='TICKETS & TABLES';
 document.querySelector('#evening .intro h2').innerHTML='The inaugural<br><em>evening.</em>';
 document.querySelector('.footer-top>div>p').textContent='The inaugural honors. A program of SALUTE.';

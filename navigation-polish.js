@@ -11,7 +11,7 @@
   header.classList.toggle('menu-open',open);toggle.setAttribute('aria-expanded',String(open));
   toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
   document.body.classList.toggle('navigation-open',open);
-  if(!open)nav.querySelector('details').open=false;
+
   if(focus)toggle.focus();
  }
  toggle.addEventListener('click',()=>setOpen(toggle.getAttribute('aria-expanded')!=='true'));
@@ -32,8 +32,8 @@
  header.after(pageNav);
  const pages={
   about:[['Community','.community-story'],['By the numbers','.community-reach'],['Why S.Suite','.community-suite-story'],['Programs','#salute']],
-  evening:[['Our approach','.night-approach'],['Agenda','.night-flow'],['Ambassadors','https://event.ssuite.org/ambassadors'],['The conversation','#recognition-conversation'],['Attend','.night-attend']],
-  partners:[['Our partners','.partner-wall'],['Partnerships','.sponsor-paths'],['Host a table','.sponsor-host']],
+  evening:[['Our approach','.night-approach'],['Agenda','.night-flow'],['The conversation','#recognition-conversation'],['SALUTE','.night-attend']],
+  partners:[['Our partners','.partner-wall'],['Partnerships','.sponsor-paths'],['SALUTE','.sponsor-host']],
  };
  function updateWayfinder(){
   setOpen(false);pageNav.replaceChildren();
