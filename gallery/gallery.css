@@ -14,3 +14,6 @@
 /* Confirmed credit order: one centered desktop row, centered mobile stack. */
 .photography-partners a{white-space:nowrap}
 @media(max-width:700px){.photography-partners{flex-direction:column;flex-wrap:nowrap;gap:8px}.photography-partners a{flex:0 0 auto;min-height:30px;width:auto;max-width:none}}
+
+/* Lightweight gallery controls: photos are unobstructed; navigation remains labelled. */
+.photo-grid button:after{content:none}.load-more{display:block;margin:28px auto 36px;padding:14px 25px;background:white;border:1px solid var(--line);font-size:12px}.viewer-stage{position:relative;display:flex;align-items:center;justify-content:center;padding:0 3% 40px}.viewer-stage button{position:absolute;bottom:0;font-size:12px;min-height:40px;padding:10px 16px}.viewer-stage .previous{left:4%}.viewer-stage .next{right:4%}.viewer-stage img{max-height:100%;max-width:100%}

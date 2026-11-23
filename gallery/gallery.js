@@ -36,18 +36,26 @@ function render(id){
   const photos=manifest.filter(p=>p.collection===cat.id);
   document.querySelector('#collection-note').textContent=cat.pending?'A place reserved for the event portraits.':'';
   const grid=document.querySelector('.photo-grid');grid.replaceChildren();
+  let shown=0;
+  document.querySelector('.load-more')?.remove();
+  const more=document.createElement('button');more.className='load-more';more.textContent='Load more photographs';more.type='button';
+  grid.after(more);
+  function appendBatch(){
   const fragment=document.createDocumentFragment();
-  photos.forEach((p,i)=>{
+  const end=Math.min(shown+24,photos.length);
+  for(let i=shown;i<end;i++){const p=photos[i];
     const b=document.createElement('button');b.ariaLabel='Open '+cat.name+' photograph '+(i+1);
-    const image=new Image();image.src=p.src;image.alt=cat.name+' photograph '+(i+1);image.loading='lazy';image.decoding='async';image.width=p.width;image.height=p.height;
+    const image=new Image();image.srcset=p.thumb360+' 360w, '+p.thumb720+' 720w';image.sizes='(max-width: 600px) 44vw, 30vw';image.src=p.thumb360;image.alt=cat.name+' photograph '+(i+1);image.loading='lazy';image.decoding='async';image.width=p.width;image.height=p.height;
     b.append(image);b.onclick=()=>openPhoto(photos,i,b);fragment.append(b);
-  });grid.append(fragment);
+  }grid.append(fragment);shown=end;more.hidden=shown>=photos.length;
+  }
+  more.onclick=appendBatch;appendBatch();
   const empty=document.querySelector('.empty');empty.hidden=!cat.pending;
   empty.innerHTML='<h4>The honorees, in the moment.</h4><p>'+cat.note+'</p>';
   const source=document.querySelector('.source-line');source.replaceChildren();
   const credit=document.createElement('span');
   if(cat.id==='photobooth')setPhotoboothCredit(credit);else credit.textContent=cat.credit;source.append(credit);
-  if(cat.source){const a=document.createElement('a');a.href=cat.source;a.target='_blank';a.rel='noopener noreferrer';a.textContent='View source collection ↗';source.append(a)}
+  if(cat.source){const a=document.createElement('a');a.href=cat.source;a.target='_blank';a.rel='noopener noreferrer';a.textContent='View source collection';source.append(a)}
 }
 function selectCollection(id){render(id);history.replaceState(null,'','#'+id)}
 categories.forEach(c=>{
@@ -66,7 +74,7 @@ document.querySelector('.previous').onclick=()=>showPhoto(current-1);
 document.querySelector('.next').onclick=()=>showPhoto(current+1);
 dialog.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();showPhoto(current+1)}if(e.key==='ArrowLeft'){e.preventDefault();showPhoto(current-1)}});
 document.querySelector('.menu').onclick=()=>{const open=document.querySelector('#main-nav').classList.toggle('open');document.querySelector('.menu').setAttribute('aria-expanded',String(open))};
-fetch('manifest.json?v=20261123-honorees53').then(r=>{if(!r.ok)throw Error('Unable to load collection');return r.json()}).then(data=>{
+fetch('manifest.json?v=20261123-speed').then(r=>{if(!r.ok)throw Error('Unable to load collection');return r.json()}).then(data=>{
   manifest=data.map(p=>({...p,collection:p.category==='cocktails'?'ceremony':p.category,categoryName:categories.find(c=>c.id===(p.category==='cocktails'?'ceremony':p.category)).name}));
   render(location.hash.slice(1)==='cocktails'?'ceremony':location.hash.slice(1)||'ceremony');
 }).catch(()=>{document.querySelector('#collection-note').textContent='The collection could not load. Please reload this page.'});
