@@ -1,5 +1,5 @@
 const categories = [
-  {id:'honorees',name:'S.SUITE Honorees',pending:true,note:'Event portraits will be added when the honoree collection is supplied.',credit:'Source collection not yet supplied.'},
+  {id:'honorees',name:'S.SUITE Honorees',credit:''},
   {id:'ceremony',name:'S.SUITE Ceremony',credit:'Photography: @nivedhamphotography',source:'https://nivedhamphotography.pixieset.com/ssuitebysalute/'},
   {id:'photobooth',name:'S.SUITE Photobooth',credit:'Photography: The Third Place Creative & West Third Films.',source:'https://thethirdplacecreative.co/salute'},
   {id:'nasdaq',name:'Nasdaq Closing',credit:'Photographs from the supplied Nasdaq collection. Photographer credit pending confirmation.',source:'https://www.dropbox.com/scl/fo/mvrg3toyihpf5m1syui3o/ADSMc6HRo3u8cwJXyOxE1Po?rlkey=1v6x69a4wzkedbjfc3lz3xf8v&dl=0'}
@@ -22,7 +22,7 @@ function showPhoto(i){
   document.querySelector('#viewer-label').textContent=p.categoryName;
   const credit=document.querySelector('#viewer-credit');
   if(p.collection==='photobooth')setPhotoboothCredit(credit);
-  else credit.textContent=p.collection==='nasdaq'?'Supplied Nasdaq collection':'@nivedhamphotography';
+  else credit.textContent=p.collection==='honorees'?'':p.collection==='nasdaq'?'Supplied Nasdaq collection':'@nivedhamphotography';
 }
 function openPhoto(photos,i,button){active=photos;trigger=button;showPhoto(i);dialog.showModal();document.body.classList.add('viewing')}
 function render(id){
@@ -66,7 +66,7 @@ document.querySelector('.previous').onclick=()=>showPhoto(current-1);
 document.querySelector('.next').onclick=()=>showPhoto(current+1);
 dialog.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();showPhoto(current+1)}if(e.key==='ArrowLeft'){e.preventDefault();showPhoto(current-1)}});
 document.querySelector('.menu').onclick=()=>{const open=document.querySelector('#main-nav').classList.toggle('open');document.querySelector('.menu').setAttribute('aria-expanded',String(open))};
-fetch('manifest.json').then(r=>{if(!r.ok)throw Error('Unable to load collection');return r.json()}).then(data=>{
+fetch('manifest.json?v=20261123-honorees53').then(r=>{if(!r.ok)throw Error('Unable to load collection');return r.json()}).then(data=>{
   manifest=data.map(p=>({...p,collection:p.category==='cocktails'?'ceremony':p.category,categoryName:categories.find(c=>c.id===(p.category==='cocktails'?'ceremony':p.category)).name}));
   render(location.hash.slice(1)==='cocktails'?'ceremony':location.hash.slice(1)||'ceremony');
 }).catch(()=>{document.querySelector('#collection-note').textContent='The collection could not load. Please reload this page.'});

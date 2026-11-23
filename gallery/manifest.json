@@ -8746,39 +8746,6 @@
   },
   {
     "category": "photobooth",
-    "src": "assets/all/photobooth-234.webp",
-    "filename": "Salute_247.jpg",
-    "width": 683,
-    "height": 1024,
-    "source": "https://app.shade.inc/collection/6e56ea9f-31f5-4d9a-9d6c-192c1f208abd",
-    "credit": "The Third Place Creative \u00b7 supplied collection",
-    "derivative": "Public browser web preview; original not downloaded",
-    "sha256": "74e20cd7de18396cec651e50fef6f3406b3e57566518f8764b2b61cdd2ab377c"
-  },
-  {
-    "category": "photobooth",
-    "src": "assets/all/photobooth-235.webp",
-    "filename": "Salute_248.jpg",
-    "width": 683,
-    "height": 1024,
-    "source": "https://app.shade.inc/collection/6e56ea9f-31f5-4d9a-9d6c-192c1f208abd",
-    "credit": "The Third Place Creative \u00b7 supplied collection",
-    "derivative": "Public browser web preview; original not downloaded",
-    "sha256": "ad3c776e63c37388d6f5a988838b774d5fc6eaf44a6e16c56c0e82a581493803"
-  },
-  {
-    "category": "photobooth",
-    "src": "assets/all/photobooth-236.webp",
-    "filename": "Salute_249.jpg",
-    "width": 683,
-    "height": 1024,
-    "source": "https://app.shade.inc/collection/6e56ea9f-31f5-4d9a-9d6c-192c1f208abd",
-    "credit": "The Third Place Creative \u00b7 supplied collection",
-    "derivative": "Public browser web preview; original not downloaded",
-    "sha256": "9adcf06e3c2722780ebb271c38027542180ccd3ab055db1dc6cb1a9619d4acff"
-  },
-  {
-    "category": "photobooth",
     "src": "assets/all/photobooth-237.webp",
     "filename": "Salute_250.jpg",
     "width": 683,
@@ -8798,5 +8765,535 @@
     "credit": "The Third Place Creative \u00b7 supplied collection",
     "derivative": "Public browser web preview; original not downloaded",
     "sha256": "50c4ae4f160a2fa544a6e5014832bd8fd164d42ec027036c88576df0921c168f"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-001.webp",
+    "filename": "Stage_HON_v2.png",
+    "width": 2000,
+    "height": 1333,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "493c6a3b24dce61d71679d788401617e458635a68ede4fdd92885af60d2c24d9"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-002.webp",
+    "filename": "image (6).png",
+    "width": 1600,
+    "height": 900,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "c913198542adf820f93088648b4544a374f0bdcf710edf2997c6412c35c9507c"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-003.webp",
+    "filename": "image (7).png",
+    "width": 1600,
+    "height": 900,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "4e1b97539cea50af025c5af872f8df7f1616af808db7390a6fc5a74c9f5dac6c"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-004.webp",
+    "filename": "image (8).png",
+    "width": 1600,
+    "height": 900,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "8e73e75f654fe2ef2982795cbc5f7fe021e6a140eda7321b4c9e5bd187e02962"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-005.webp",
+    "filename": "image (9).png",
+    "width": 1600,
+    "height": 900,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "c5ed4ad44112a2a45f834a9c4a55a6761f00945278bb45f5e0a39de70c1d8185"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-006.webp",
+    "filename": "image (10).png",
+    "width": 1600,
+    "height": 900,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "4b2e2836507a44b7f4a74d1c945c36cd34bdd045573e2ad729728a6ec812071a"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-007.webp",
+    "filename": "image (11).png",
+    "width": 1600,
+    "height": 900,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "0a21ced9579dc133d3153e1a2083c24417fa25043d71f9a55bd4557ed3e3be60"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-008.webp",
+    "filename": "image (12).png",
+    "width": 1600,
+    "height": 900,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "57f984b8eb2195130e545d72d89275be369565987b4db5af36845898cf863768"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-009.webp",
+    "filename": "image (13).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "5c1eb62164b8490ef61067c3f1f4ae25ecaa323ee93063e4b3c46a883109d83e"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-010.webp",
+    "filename": "image (14).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "f69a20809bc7b3b18fd7b0021506586b1b243d749bbbc1f05948acfeac5cab14"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-011.webp",
+    "filename": "image (15).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "51a79cd8e18223750cbde7f96157125b2a72783532bca902b34b77a3c30a7b89"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-012.webp",
+    "filename": "image (16).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "a17e41e43bce84706dede1b1d911f2a35730fe01d154fd3e2c37ac3f068cac42"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-013.webp",
+    "filename": "image (17).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "6289c1ed4541585b8243646f11952494280acdcc3814c5ba085c51891ec4177e"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-014.webp",
+    "filename": "image (18).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "3ceb0a23cdabe5ce3300e632ffaaec4e016d6d07d906b1db4fc22c94401790cb"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-015.webp",
+    "filename": "image (19).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "946113bc7d145d460a3283788777f9fcf2c41c2018608b9beb261cc49957b7b5"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-016.webp",
+    "filename": "image (20).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "787339535dbc8ffd9485231feadfed2f16fade6c1a8b2b1941eef58b684ced52"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-017.webp",
+    "filename": "image (21).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "13140a7a5899024243737e8c2ecb949cf494f9db645e4e7945732776c9522792"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-018.webp",
+    "filename": "image (22).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "20471a037da353c08c549aa40463c059bdc4dcd83b434d44d24085d24e4d394b"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-019.webp",
+    "filename": "image (23).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "893897d0464af5038ed3b174b7a34bf8cc4db92c49bfe94f5791202bea027717"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-020.webp",
+    "filename": "image (24).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "5f3e306e106038b65bd54b2923bd7cb30e3d7fedf8e7327a176db894e0915216"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-021.webp",
+    "filename": "image (25).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "92d5e189ec53189dcc65c65202a68cc8dec93087b0a8f4b326adffdfe59d083d"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-022.webp",
+    "filename": "image (26).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "1eced542d162f20b6befb98a8136499f3f531b7ca560dfb127a9df28646baa66"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-023.webp",
+    "filename": "image (27).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "0c12c70218442de1e1b4654eba56498cfebda6691db0c9eb5dccbbdfe3d4a495"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-024.webp",
+    "filename": "image (28).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "d11435a94f33a44e3d2e0e3c0177155827b4ce0f35fc0eb6fe22f0a4f95f1d91"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-025.webp",
+    "filename": "image (29).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "20ff136c43bdd1439f7f232e6215a81785b1e6782a228b828762143621dbace1"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-026.webp",
+    "filename": "image (30).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "3f6c6ba3d6419c343f9762738d8004686ad5a58068a56455f6527261fc792b1b"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-027.webp",
+    "filename": "image (31).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "3282c3440ded6b4d66e3b46fe689a20f6f3110bf1286600cf8797b9a22f03540"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-028.webp",
+    "filename": "image (32).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "f38d348ec10e9b21415db782a767699b281bbed93d72d5549f17264ea40e7fc6"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-029.webp",
+    "filename": "image (33).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "417b19a6fbf5e9d639c418f89faf3caf67cf3b4b9f1b586b3400483807cc9f12"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-030.webp",
+    "filename": "image (34).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "eb01e7643ec30c4790d5be1661d721b993d215ad292dc520d2b72055db387d29"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-031.webp",
+    "filename": "image (35).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "6b6681f73cda4c6a6f64a1ce848e389009413bb734ad926835fc13c544187420"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-032.webp",
+    "filename": "image (36).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "a03f88ade37d863651411afe66ee15e3098c2f16ca843629c43191dd39393947"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-033.webp",
+    "filename": "image (37).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "e84b56912bc1b695923dfc838d5ff6a34905ecd6e99ffc2dcb7117a5db5d7e0f"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-034.webp",
+    "filename": "image (38).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "0ea258df187fddc935375d98dc6cf8becce0fab71b63c8cac715c61da6968fad"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-035.webp",
+    "filename": "image (39).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "082540264b8b9c55992698a5d4fb97b057c4387f9c5a0ff8448a8a226402fd23"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-036.webp",
+    "filename": "image (40).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "00377e05993c38362962e5e2453e42488c82c066b0b320151af51e87822930cc"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-037.webp",
+    "filename": "image (41).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "92c65c554956546d5e65b2dd8374d45601eff2f8752c6dd559b6d182412fbc22"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-038.webp",
+    "filename": "image (42).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "192353f1b72287803eca3afc11796414b50fcc2555e8fe0bfa7ed50c4717ed5f"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-039.webp",
+    "filename": "image (43).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "b8f167ea1b7eb22162f53c6d5670f5097b87c47a827aa4e2cc7a1685f3e7bded"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-040.webp",
+    "filename": "image (44).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "e572cc37c8a4ce98399cc8b00209c15f130034cf0c50574082822f20634ae2d9"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-041.webp",
+    "filename": "image (45).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "011a4e280725794100f9be9687fd1ae8fe5282ac06ce2c637ab96fe6cc9d0807"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-042.webp",
+    "filename": "image (46).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "fdaf435085fcf3863576925ba01580ff567b05235db4a71e8343097e581f0d20"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-043.webp",
+    "filename": "image (47).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "e3175578bfec15343a4c986f995e54a672c0fa4629000769e68d864d715d40f3"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-044.webp",
+    "filename": "image (48).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "9cbf782151f4bfbff7806cfae491cd64e25eb3d1c01519ce4e227e43294cc6cc"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-045.webp",
+    "filename": "image (49).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "7c926c716660dda2ef197f7fb75afbfbccab936d149df5565ff9434b3fff518d"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-046.webp",
+    "filename": "image (50).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "355d10fcb6f30861c384bb5dffd02a0587e161f66951d803aca981dafe126a6b"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-047.webp",
+    "filename": "image (51).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "ed7a20d5ed3a00f071156719cac645292e86dc0354fea65052a315e8b3e61e2f"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-048.webp",
+    "filename": "image (52).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "a8a192ed1953bfbcfb4b6cd978a0bafff09ea1be510dd780425bfb4e16421779"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-049.webp",
+    "filename": "image (53).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "d66a92d986930c82a494acc89e92872c6023b4e85b6b721774db61fb405e4d3f"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-050.webp",
+    "filename": "image (54).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "a277ddf43164ede0373a31745f7a3529b69ed8b4ae87432cd904ed71bfb23e00"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-051.webp",
+    "filename": "image (55).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "8c23e72f15bfeac7287d72688f97e2e214933299cdddae5947348aad75134f35"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-052.webp",
+    "filename": "image (56).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "7e9043c6ecb6a40ec8a560988b8d4a4ae59bb9adcf98d0a42d1b84e55e9413e9"
+  },
+  {
+    "category": "honorees",
+    "src": "assets/honorees/honorees-053.webp",
+    "filename": "image (57).png",
+    "width": 683,
+    "height": 1024,
+    "source": "User-supplied Honorees photograph",
+    "credit": "",
+    "sha256": "1c453f0b137aa59ec7b002b81a6d6def134ff33a99c6ebab546be889ccfd8efd"
   }
 ]
