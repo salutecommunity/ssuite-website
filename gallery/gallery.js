@@ -1,19 +1,28 @@
 const categories = [
   {id:'honorees',name:'S.SUITE Honorees',pending:true,note:'Event portraits will be added when the honoree collection is supplied.',credit:'Source collection not yet supplied.'},
   {id:'ceremony',name:'S.SUITE Ceremony',credit:'Photography: @nivedhamphotography',source:'https://nivedhamphotography.pixieset.com/ssuitebysalute/'},
-  {id:'photobooth',name:'S.SUITE Photobooth',credit:'Collection supplied by The Third Place Creative.',source:'https://thethirdplacecreative.co/salute'},
+  {id:'photobooth',name:'S.SUITE Photobooth',credit:'Photography: The Third Place Creative & West Third Films.',source:'https://thethirdplacecreative.co/salute'},
   {id:'nasdaq',name:'Nasdaq Closing',credit:'Photographs from the supplied Nasdaq collection. Photographer credit pending confirmation.',source:'https://www.dropbox.com/scl/fo/mvrg3toyihpf5m1syui3o/ADSMc6HRo3u8cwJXyOxE1Po?rlkey=1v6x69a4wzkedbjfc3lz3xf8v&dl=0'}
 ];
 let manifest=[],active=[],current=0,trigger;
 const dialog=document.querySelector('dialog');
 const picker=document.querySelector('#collection-select');
+function setPhotoboothCredit(element){
+  element.replaceChildren();
+  [['The Third Place Creative','https://www.thethirdplacecreative.co/'],['West Third Films','https://www.westthirdfilms.com/']].forEach(([name,url],i)=>{
+    if(i)element.append(document.createTextNode(' & '));
+    const a=document.createElement('a');a.textContent=name;a.href=url;a.target='_blank';a.rel='noopener noreferrer';element.append(a);
+  });
+}
 function showPhoto(i){
   current=(i+active.length)%active.length;
   const p=active[current];
   const image=dialog.querySelector('.viewer-stage img');
   image.src=p.src; image.alt=p.categoryName+' photograph '+(current+1);
   document.querySelector('#viewer-label').textContent=p.categoryName;
-  document.querySelector('#viewer-credit').textContent=p.collection==='nasdaq'?'Supplied Nasdaq collection':p.collection==='photobooth'?'The Third Place Creative':'@nivedhamphotography';
+  const credit=document.querySelector('#viewer-credit');
+  if(p.collection==='photobooth')setPhotoboothCredit(credit);
+  else credit.textContent=p.collection==='nasdaq'?'Supplied Nasdaq collection':'@nivedhamphotography';
 }
 function openPhoto(photos,i,button){active=photos;trigger=button;showPhoto(i);dialog.showModal();document.body.classList.add('viewing')}
 function render(id){
@@ -36,7 +45,8 @@ function render(id){
   const empty=document.querySelector('.empty');empty.hidden=!cat.pending;
   empty.innerHTML='<h4>The honorees, in the moment.</h4><p>'+cat.note+'</p>';
   const source=document.querySelector('.source-line');source.replaceChildren();
-  const credit=document.createElement('span');credit.textContent=cat.credit;source.append(credit);
+  const credit=document.createElement('span');
+  if(cat.id==='photobooth')setPhotoboothCredit(credit);else credit.textContent=cat.credit;source.append(credit);
   if(cat.source){const a=document.createElement('a');a.href=cat.source;a.target='_blank';a.rel='noopener noreferrer';a.textContent='View source collection ↗';source.append(a)}
 }
 function selectCollection(id){render(id);history.replaceState(null,'','#'+id)}
