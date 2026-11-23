@@ -5,7 +5,7 @@ const categories = [
   {id:'nasdaq',name:'Nasdaq Closing',credit:'Photographs from the supplied Nasdaq collection. Photographer credit pending confirmation.',source:'https://www.dropbox.com/scl/fo/mvrg3toyihpf5m1syui3o/ADSMc6HRo3u8cwJXyOxE1Po?rlkey=1v6x69a4wzkedbjfc3lz3xf8v&dl=0'}
 ];
 let manifest=[],active=[],current=0,trigger,selectedCategory="ceremony",selectedPage=1;
-const PAGE_SIZE=24;
+const PAGE_SIZE=30;
 const dialog=document.querySelector('dialog');
 const picker=document.querySelector('#collection-select');
 function setPhotoboothCredit(element){
@@ -68,7 +68,6 @@ function render(id,page=1){
   if(cat.id==='photobooth')setPhotoboothCredit(credit);else credit.textContent=cat.credit;source.append(credit);
   if(cat.source){const a=document.createElement('a');a.href=cat.source;a.target='_blank';a.rel='noopener noreferrer';a.textContent='View source collection';source.append(a)}
 }
-function navigate(id,page=1,scroll=false,replace=false){render(id,page);history[replace?"replaceState":"pushState"](null,'','#'+selectedCategory+(selectedPage>1?'?page='+selectedPage:''));if(scroll){const title=document.querySelector('.collection-meta');title.setAttribute('tabindex','-1');title.scrollIntoView({behavior:'instant',block:'start'});title.focus({preventScroll:true})}}
 function readLocation(){const [id,query='']=location.hash.slice(1).split('?');return {id:id==='cocktails'?'ceremony':id||'ceremony',page:Number(new URLSearchParams(query).get('page'))||1}}
 function navigate(id,page=1,scroll=false,replace=false){
   render(id,page);
@@ -77,7 +76,7 @@ function navigate(id,page=1,scroll=false,replace=false){
   if(scroll){const heading=document.querySelector('.collection-meta');heading.tabIndex=-1;heading.focus({preventScroll:true});heading.scrollIntoView({behavior:'instant',block:'start'})}
 }
 function selectCollection(id){navigate(id,1)}
-function restoreLocation(){if(!manifest.length)return;if(dialog.open){active=[];dialog.close();}const s=readLocation();render(s.id,s.page)}
+function restoreLocation(){if(!manifest.length)return;if(dialog.open){active=[];dialog.close();}const s=readLocation();navigate(s.id,s.page,false,true)}
 window.addEventListener('popstate',restoreLocation);
 window.addEventListener('hashchange',restoreLocation);
 categories.forEach(c=>{
@@ -98,5 +97,5 @@ dialog.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault(
 document.querySelector('.menu').onclick=()=>{const open=document.querySelector('#main-nav').classList.toggle('open');document.querySelector('.menu').setAttribute('aria-expanded',String(open))};
 fetch('manifest.json?v=20261124-numbered-pages-v1').then(r=>{if(!r.ok)throw Error('Unable to load collection');return r.json()}).then(data=>{
   manifest=data.filter((p,i,all)=>all.findIndex(q=>q.src===p.src)===i).map(p=>({...p,collection:p.category==='cocktails'?'ceremony':p.category,categoryName:categories.find(c=>c.id===(p.category==='cocktails'?'ceremony':p.category)).name}));
-  const state=readLocation();render(state.id,state.page);
+  const state=readLocation();navigate(state.id,state.page,false,true);
 }).catch(()=>{document.querySelector('#collection-note').textContent='The collection could not load. Please reload this page.'});
