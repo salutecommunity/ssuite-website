@@ -1491,6 +1491,21 @@
     "sourceCapturedAt": "2026-11-23T21:55:16.793Z"
   },
   {
+    "category": "honorees",
+    "src": "assets/nivedha-current/nivedha-311df64c9e602c38.jpg",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "311df64c9e602c389242bd935be830054d12c54f2cafeb632222a1e6af595018",
+    "thumb360": "assets/nivedha-current/nivedha-311df64c9e602c38-360.webp",
+    "thumb720": "assets/nivedha-current/nivedha-311df64c9e602c38-720.webp",
+    "filename": "NM-S.Suite-385.jpg",
+    "source": "https://nivedhamphotography.pixieset.com/ssuitebysalute/ceremony/",
+    "assetSource": "https://images.pixieset.com/474709721/df6a62dbb7a8f879a3cc9d5217a8e202-xlarge.jpg",
+    "credit": "@nivedhamphotography",
+    "sourcePhotoId": 21124062543,
+    "sourceCapturedAt": "2026-11-23T21:55:16.793Z"
+  },
+  {
     "category": "cocktails",
     "src": "assets/all/cocktails-001.jpg",
     "filename": "NM-S.Suite-001.jpg",
@@ -6423,21 +6438,6 @@
     "assetSource": "https://images.pixieset.com/474709721/01684e01c76816f32d520b7f0d38dd20-xlarge.jpg",
     "credit": "@nivedhamphotography",
     "sourcePhotoId": 21124065221,
-    "sourceCapturedAt": "2026-11-23T21:55:16.793Z"
-  },
-  {
-    "category": "ceremony",
-    "src": "assets/nivedha-current/nivedha-311df64c9e602c38.jpg",
-    "width": 1024,
-    "height": 1536,
-    "sha256": "311df64c9e602c389242bd935be830054d12c54f2cafeb632222a1e6af595018",
-    "thumb360": "assets/nivedha-current/nivedha-311df64c9e602c38-360.webp",
-    "thumb720": "assets/nivedha-current/nivedha-311df64c9e602c38-720.webp",
-    "filename": "NM-S.Suite-385.jpg",
-    "source": "https://nivedhamphotography.pixieset.com/ssuitebysalute/ceremony/",
-    "assetSource": "https://images.pixieset.com/474709721/df6a62dbb7a8f879a3cc9d5217a8e202-xlarge.jpg",
-    "credit": "@nivedhamphotography",
-    "sourcePhotoId": 21124062543,
     "sourceCapturedAt": "2026-11-23T21:55:16.793Z"
   },
   {
