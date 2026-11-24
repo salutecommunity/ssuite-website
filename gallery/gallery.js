@@ -95,7 +95,7 @@ document.querySelector('.previous').onclick=()=>showPhoto(current-1);
 document.querySelector('.next').onclick=()=>showPhoto(current+1);
 dialog.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();showPhoto(current+1)}if(e.key==='ArrowLeft'){e.preventDefault();showPhoto(current-1)}});
 document.querySelector('.menu').onclick=()=>{const open=document.querySelector('#main-nav').classList.toggle('open');document.querySelector('.menu').setAttribute('aria-expanded',String(open))};
-fetch('manifest.json?v=adjacent-confirmed-20261124').then(r=>{if(!r.ok)throw Error('Unable to load collection');return r.json()}).then(data=>{
+fetch('manifest.json?v=ceremony-correction-152-20261124').then(r=>{if(!r.ok)throw Error('Unable to load collection');return r.json()}).then(data=>{
   manifest=data.filter((p,i,all)=>all.findIndex(q=>q.src===p.src)===i).map(p=>({...p,collection:p.category==='cocktails'?'ceremony':p.category,categoryName:categories.find(c=>c.id===(p.category==='cocktails'?'ceremony':p.category)).name}));
   const state=readLocation();navigate(state.id,state.page,false,true);
 }).catch(()=>{document.querySelector('#collection-note').textContent='The collection could not load. Please reload this page.'});
